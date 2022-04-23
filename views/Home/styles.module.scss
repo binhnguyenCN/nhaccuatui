@@ -1,0 +1,30 @@
+.content-grid {
+  display: grid;
+  width: 100%;
+  margin-bottom: 2rem;
+  grid-template-columns: 7.4fr 2.6fr;
+  grid-template-rows:
+    repeat(3, 20rem) /* album & songranking */
+    40rem /* albumhot & mvranking */
+    5rem /* mv-list & mvranking */
+    15rem /* mv-list & suggestforu */
+    15rem /* mv-list & hottopic */
+    15rem /* song-list & hottopic */
+    10rem /* song-list */
+    repeat(2, 20rem); /* top100 & weekly */
+
+  grid-gap: 40px;
+
+  // grid-template-areas:
+  //   'album1 songRanking'
+  //   'album2 songRanking'
+  //   'album3 songRanking'
+  //   'albumHot mvRanking'
+  //   'mvList mvRanking'
+  //   'mvList suggestForu'
+  //   'mvList hotTopic'
+  //   'songList hotTopic'
+  //   'songList .'
+  //   'top100 .'
+  //   'weekly .';
+}

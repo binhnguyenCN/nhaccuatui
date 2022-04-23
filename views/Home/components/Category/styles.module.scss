@@ -1,0 +1,39 @@
+.category {
+  .category-title {
+    font-size: 4rem;
+  }
+
+  &:nth-child(odd) {
+    background-color: red;
+  }
+
+  &:nth-child(even) {
+    background-color: yellow;
+  }
+}
+
+.album-list:first-child {
+  grid-area: album1;
+}
+
+.album-list:nth-child(2) {
+  grid-area: album2;
+}
+
+.album-list:nth-child(3) {
+  grid-area: album3;
+}
+
+.album-hot {
+  grid-area: albumHot;
+}
+
+.mv-category {
+  grid-area: mvList;
+  padding: 25px;
+}
+
+.song-category {
+  grid-area: songList;
+  padding: 10px;
+}
