@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint-style": "stylelint ../**/*.scss --fix",
+    "lint-js": "eslint . --fix",
+    "format": "prettier . --write",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

@@ -2,24 +2,25 @@ import React from 'react';
 
 import Category from './components/Category';
 import HotTopic from './components/HotTopic';
-import MVRanking from './components/MV/MVRanking';
+import MVRanking from './components/MVRanking';
 import Slider from './components/Slider';
-import SongRanking from './components/Song/SongRanking';
+import SongRanking from './components/SongRanking';
 import SuggestForYou from './components/SuggestForU';
-import TopSong from './components/TopSong';
-import WeeklyArtist from './components/WeeklyArtist';
+import TopSong from './components/Category/TopSong';
+import WeeklyArtist from './components/Category/WeeklyArtist';
+import styles from './styles.module.scss';
 
 const Home = () => (
   <>
     <Slider />
-    <div className="content-grid">
+    <div className={styles['content-grid']}>
       {/* Content */}
-      <Category type="album-list" />
-      <Category type="album-list" />
-      <Category type="album-list" />
-      <Category type="album-hot" />
-      <Category type="mv-list" />
-      <Category type="song-list" />
+      <Category type="album" title="điểm sáng nhạc việt" />
+      <Category type="album" title="mới cập nhật" />
+      <Category type="album" title="hôm nay nghe gì" />
+      <Category type="album-hot" title="mới phát hành" />
+      <Category type="mv" title="mv hot" />
+      <Category type="song" title="bài hát" />
       <TopSong />
       <WeeklyArtist />
       {/* Sidebar */}

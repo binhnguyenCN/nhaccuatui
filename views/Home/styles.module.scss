@@ -2,29 +2,18 @@
   display: grid;
   width: 100%;
   margin-bottom: 2rem;
-  grid-template-columns: 7.4fr 2.6fr;
-  grid-template-rows:
-    repeat(3, 20rem) /* album & songranking */
-    40rem /* albumhot & mvranking */
-    5rem /* mv-list & mvranking */
-    15rem /* mv-list & suggestforu */
-    15rem /* mv-list & hottopic */
-    15rem /* song-list & hottopic */
-    10rem /* song-list */
-    repeat(2, 20rem); /* top100 & weekly */
-
   grid-gap: 40px;
-
-  // grid-template-areas:
-  //   'album1 songRanking'
-  //   'album2 songRanking'
-  //   'album3 songRanking'
-  //   'albumHot mvRanking'
-  //   'mvList mvRanking'
-  //   'mvList suggestForu'
-  //   'mvList hotTopic'
-  //   'songList hotTopic'
-  //   'songList .'
-  //   'top100 .'
-  //   'weekly .';
+  grid-template:
+    [row1-start] "album1 songRanking" 20rem [row1-end]
+    [row2-start] "album2 songRanking" 20rem [row2-end]
+    [row3-start] "album3 songRanking" 20rem [row3-end]
+    [row4-start] "albumHot mvRanking" 40rem [row4-end]
+    [row5-start] "mvList mvRanking" 5rem [row5-end]
+    [row6-start] "mvList suggestForu" 15rem [row6-end]
+    [row7-start] "mvList hotTopic" 15rem [row7-end]
+    [row8-start] "songList hotTopic" 15rem [row8-end]
+    [row9-start] "songList ." 10rem [row9-end]
+    [row10-start] "top100 ." 20rem [row10-end]
+    [row11-start] "weekly ." 20rem [row11-end]
+    / 7.4fr 2.6fr;
 }
