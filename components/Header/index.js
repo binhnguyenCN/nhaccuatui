@@ -2,10 +2,11 @@ import React from 'react';
 
 import styles from './styles.module.scss';
 
-function Header() {
+function Header(props) {
+  const { title } = props;
   return (
     <header className={styles['header-wrapper']}>
-      <h1>HEADER</h1>
+      <h1>{title}</h1>
       <nav />
       <div className="search">
         <i />
