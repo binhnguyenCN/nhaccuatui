@@ -42,6 +42,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.4.0",
     "prettier": "^2.6.2",
+    "storybook-addon-sass-postcss": "^0.1.1",
     "stylelint": "^14.7.1",
     "stylelint-config-prettier-scss": "0.0.1",
     "stylelint-config-standard-scss": "^3.0.0"
