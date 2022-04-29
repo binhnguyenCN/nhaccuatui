@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 
+// import styles from '../styles/Home.module.scss';
 import Home from '../views/Home';
 
 export default function HomePage() {

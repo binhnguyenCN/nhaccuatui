@@ -1,0 +1,6 @@
+.song-list {
+  display: grid;
+  height: 90%;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
