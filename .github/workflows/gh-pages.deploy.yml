@@ -5,14 +5,16 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ develop ]
+    branches: [develop]
   pull_request:
-    branches: [ develop ]
+    branches: [develop]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+
+    env:
+      NEXT_PUBLIC_BASE_PATH: /nhaccuatui
 
     strategy:
       matrix:
@@ -20,23 +22,23 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: Get files
-      uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: Install packages
-      run: npm ci
-    - name: Build project
-      run: npm run build
-    - name: Export static files
-      run: npm run export
-    - name: Add .nojekyll file
-      run: touch ./out/.nojekyll
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.1
-      with:
-        branch: gh-pages
-        folder: out
+      - name: Get files
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Install packages
+        run: npm ci
+      - name: Build project
+        run: npm run build
+      - name: Export static files
+        run: npm run export
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: out
