@@ -1,5 +1,6 @@
 {
   "name": "nhaccuatui",
+  "homepage": "https://binhnguyenCitynow.github.io/nhaccuatui",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +12,9 @@
     "lint-js": "eslint . --fix",
     "format": "prettier . --write",
     "prepare": "husky install",
+    "predeploy": "npm run build-storybook",
     "storybook": "start-storybook -p 6006",
+    "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
@@ -40,6 +43,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.5.11",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.4.0",
     "prettier": "^2.6.2",
