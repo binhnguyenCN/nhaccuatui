@@ -10,7 +10,14 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    '@storybook/addon-postcss',
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    },
     'storybook-addon-sass-postcss',
     {
       name: 'storybook-addon-next',
@@ -19,7 +26,7 @@ module.exports = {
       },
     },
   ],
-  staticDirs: ['../public'],
+  staticDirs: ['../public/fonts'],
   framework: '@storybook/react',
   core: {
     builder: '@storybook/builder-webpack5',
