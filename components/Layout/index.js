@@ -1,10 +1,9 @@
 import React from 'react';
 
-import Footer from '../Footer';
-import Header from '../Header';
+import { Footer, Header } from '..';
 import styles from './styles.module.scss';
 
-function Layout(props) {
+const Layout = (props) => {
   const { children } = props;
   return (
     <div className={styles.container}>
@@ -13,5 +12,5 @@ function Layout(props) {
       <Footer />
     </div>
   );
-}
+};
 export default Layout;

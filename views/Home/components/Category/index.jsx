@@ -20,6 +20,5 @@ const Category = (props) => {
 
 Category.propTypes = {
   type: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
 };
 export default Category;

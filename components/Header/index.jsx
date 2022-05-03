@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './styles.module.scss';
 
-function Header(props) {
+const Header = (props) => {
   const { title } = props;
   return (
     <header className={styles['header-wrapper']}>
@@ -13,5 +13,5 @@ function Header(props) {
       </div>
     </header>
   );
-}
+};
 export default Header;

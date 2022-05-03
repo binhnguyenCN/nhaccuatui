@@ -1,24 +1,15 @@
-html,
+@import "./variables";
+
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Fira Sans",
-    "Droid Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-size: 16px;
+  font-family: $font-family;
 }
 
-ul {
-  list-style-type: none;
+html {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,6 +17,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: $font-size;
+  font-weight: weight(regular);
+  line-height: $line-height;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {

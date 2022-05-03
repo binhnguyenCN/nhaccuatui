@@ -1,13 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+@font-face {
+  font-family: NhacCuaTui;
+  src: url("../public/fonts/NhacCuaTui-Regular.woff");
+}
+
+@font-face {
+  font-family: NhacCuaTui;
+  src: url("../public/fonts/NhacCuaTui-Medium.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: NhacCuaTui;
+  src: url("../public/fonts/NhacCuaTui-Bold.woff");
+  font-weight: 700;
+}
 
 $font-size: 1rem;
 $font-weights: (
   "regular": 200,
-  "medium": 400,
-  "bold": 500,
+  "medium": 500,
+  "bold": 700,
 );
 $font-family: "NhacCuaTui", sans-serif;
-$line-height: 1.5;
-$tablet: 1024px;
-$mobile: 768px;
-$laptop: 1224px;
+$line-height: 1;

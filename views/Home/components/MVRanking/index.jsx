@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from './styles.module.scss';
 
+// import PropTypes from 'prop-types';
 const MVRanking = () => (
   <div className={styles['mv-ranking']}>
     <h1>MV RANKING</h1>
