@@ -1,13 +1,13 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Deploy Nextjs Project to GitHub Pages
+name: Deploy Storybook Project to GitHub Pages
 
 on:
   push:
-    branches: [production]
+    branches: [develop]
   pull_request:
-    branches: [production]
+    branches: [develop]
 
 jobs:
   build:
@@ -19,7 +19,6 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - name: Get files
@@ -32,13 +31,11 @@ jobs:
       - name: Install packages
         run: npm ci
       - name: Build project
-        run: npm run build
-      - name: Export static files
-        run: npm run export
+        run: npm run build-storybook
       - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
+        run: touch ./storybook-static/.nojekyll
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
-          folder: out
+          folder: storybook-static
