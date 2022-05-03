@@ -10,6 +10,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-postcss',
     'storybook-addon-sass-postcss',
     {
       name: 'storybook-addon-next',
