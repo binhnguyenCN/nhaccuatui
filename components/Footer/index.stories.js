@@ -11,4 +11,4 @@ export default {
 const Template = (args) => <Footer {...args} />;
 
 export const Temp = Template.bind({});
-Temp.args = {};
+Temp.args = { title: 'Hello' };
