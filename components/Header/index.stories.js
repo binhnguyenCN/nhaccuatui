@@ -1,14 +1,9 @@
 import React from 'react';
 
-import Header from './index';
+import Ele from './index';
 
 export default {
   title: 'Components/Header',
-  component: Header,
-  parameters: {},
+  component: Ele,
 };
-
-const Template = (args) => <Header {...args} />;
-
-export const Hello = Template.bind({});
-Hello.args = { title: 'Hello' };
+export const Header = () => <Header />;
