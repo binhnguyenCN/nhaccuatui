@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
   stories: [
-    // '../stories/**/*.stories.mdx',
     '../views/**/*.stories.@(js|jsx|ts|tsx)',
     '../components/**/*.stories.@(js|jsx|ts|tsx)',
   ],
@@ -26,7 +25,7 @@ module.exports = {
       },
     },
   ],
-  staticDirs: ['../public/fonts'],
+  staticDirs: ['../public'],
   framework: '@storybook/react',
   core: {
     builder: '@storybook/builder-webpack5',
