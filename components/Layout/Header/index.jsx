@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import images from '../../constants/images';
+import images from '../../../constants/images';
 import HeaderAuth from './components/HeaderAuth';
 import HeaderMenu from './components/HeaderMenu';
 import HeaderUtils from './components/HeaderUtils';

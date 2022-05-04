@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import images from '../../../../constants/images';
+import images from '../../../../../constants/images';
 import styles from './styles.module.scss';
 
 const HeaderUtils = () => (

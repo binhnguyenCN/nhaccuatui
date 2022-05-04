@@ -7,7 +7,6 @@ const nextConfig = {
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
-    prependData: '@import "App.scss";',
   },
 };
 
