@@ -1,0 +1,25 @@
+@import "../../../../../styles/App";
+
+.header-search {
+  background-color: $background-secondary;
+  padding: 2px 7px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  i {
+    font-size: 15px;
+  }
+
+  input {
+    background-color: $background-secondary;
+    padding: 5px;
+    outline: none;
+    border: none;
+    width: 160px;
+    height: 32px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+}

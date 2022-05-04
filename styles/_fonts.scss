@@ -16,10 +16,8 @@
 }
 
 $font-size: 1rem;
-$font-weights: (
-  "regular": 200,
-  "medium": 500,
-  "bold": 700,
-);
+$font-weights-regular: 200;
+$font-weights-medium: 500;
+$font-weights-bold: 700;
 $font-family: "NhacCuaTui", sans-serif;
 $line-height: 1;
