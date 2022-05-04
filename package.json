@@ -18,7 +18,10 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.20.2",
     "next": "12.1.5",
+    "next-plugin-antd-less": "^1.8.0",
     "prop-types": "^15.8.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
@@ -27,6 +30,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-docs": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-interactions": "^6.4.22",
     "@storybook/addon-links": "^6.4.22",
