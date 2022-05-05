@@ -1,5 +1,19 @@
 .slider-wrapper {
-  height: 15rem;
-  background-color: skyblue;
+  width: 1200px;
+  height: 419px;
+  background-color: rgb(135 207 235 / 44.1%);
   margin-bottom: 20px;
+  align-self: center;
+
+  .slider-inner {
+    margin: 0 auto;
+    width: 962px;
+    height: 100%;
+
+    img {
+      width: 962px;
+      height: 388px;
+      object-fit: cover;
+    }
+  }
 }
