@@ -28,5 +28,6 @@ module.exports = {
       },
     ],
     'react/function-component-definition': 0,
+    'operator-linebreak': [2, 'after'],
   },
 };

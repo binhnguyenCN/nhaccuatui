@@ -7,10 +7,10 @@ import styles from './styles.module.scss';
 const HeaderUtils = () => (
   <div className={styles['header-util']}>
     <div className={styles['header-util_payment']}>
-      <Image src={images.store} alt="store" width={28} height={28} />
+      <img src={images.store} alt="store" width={28} height={28} />
     </div>
     <div className={styles['header-util_upload']}>
-      <Image src={images.upload} alt="upload" width={28} height={28} />
+      <img src={images.upload} alt="upload" width={28} height={28} />
     </div>
   </div>
 );

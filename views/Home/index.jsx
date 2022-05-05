@@ -10,14 +10,9 @@ import {
   topSong,
   videoList,
 } from '../../api/mockApi';
-import {
-  Category,
-  HotTopic,
-  MVRanking,
-  Slider,
-  SongRanking,
-  SuggestForYou,
-} from './components';
+import { Category, MVRanking } from './components';
+import { Slider, SongRanking, SuggestForYou, HotTopic } from './mains';
+
 import styles from './styles.module.scss';
 
 const Home = () => (

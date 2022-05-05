@@ -3,7 +3,7 @@ import React from 'react';
 import Footer from './index';
 
 export default {
-  title: 'Components/Footer',
+  title: 'Components/Layout/Footer',
   component: Footer,
   parameters: {},
 };

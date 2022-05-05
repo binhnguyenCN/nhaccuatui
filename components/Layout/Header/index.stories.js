@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Ele from './index';
+import Header from './index';
 
 export default {
-  title: 'Components/Header',
-  component: Ele,
+  title: 'Components/Layout/Header',
+  component: Header,
 };
-export const Header = () => <Header />;
+export const Template = () => <Header />;

@@ -6,27 +6,10 @@
   align-items: center;
   z-index: 1;
   position: absolute;
-  top: 45px;
+  top: 38px;
   left: 0;
   width: 550px;
   padding: 30px;
   background-color: $text-light;
   box-shadow: 0 3px 8px rgb(3 3 3 / 26%);
-
-  li {
-    ul {
-      li {
-        font-size: 14px;
-        height: 38px;
-
-        &:hover {
-          color: $text-active;
-        }
-      }
-
-      li.submenu-title {
-        font-weight: $font-weights-bold;
-      }
-    }
-  }
 }

@@ -1,0 +1,22 @@
+@import "../../../../../styles/App";
+
+li.submenu-item {
+  ul {
+    li {
+      height: 38px;
+      font-size: 14px;
+    }
+
+    li.submenu-content {
+      &:hover {
+        a {
+          color: $text-active;
+        }
+      }
+    }
+
+    li.submenu-title {
+      font-weight: $font-weights-bold;
+    }
+  }
+}

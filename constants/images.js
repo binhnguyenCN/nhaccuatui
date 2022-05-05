@@ -1,11 +1,6 @@
-import logoIcon from '../public/images/logo_new.png';
-import newVersion from '../public/images/ic_new.png';
-import store from '../public/images/ic_store.png';
-import upload from '../public/images/ic_upload.png';
-
 export default {
-  logoIcon,
-  newVersion,
-  store,
-  upload,
+  logoIcon: 'images/logo_new.png',
+  newVersion: '/images/ic_new.png',
+  store: '/images/ic_store.png',
+  upload: '/images/ic_upload.png',
 };

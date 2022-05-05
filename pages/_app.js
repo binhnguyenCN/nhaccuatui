@@ -1,5 +1,3 @@
-// import '../styles/antd.less';
-// import 'antd/dist/antd.css';
 import '../styles/globals.scss';
 
 import React from 'react';
