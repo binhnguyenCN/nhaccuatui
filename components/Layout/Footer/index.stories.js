@@ -5,10 +5,6 @@ import Footer from './index';
 export default {
   title: 'Components/Layout/Footer',
   component: Footer,
-  parameters: {},
 };
 
-const Template = (args) => <Footer {...args} />;
-
-export const Temp = Template.bind({});
-Temp.args = { title: 'Hello' };
+export const Template = () => <Footer />;

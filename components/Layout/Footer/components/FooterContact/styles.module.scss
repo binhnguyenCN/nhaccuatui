@@ -1,0 +1,21 @@
+@import "../../../../../styles/App";
+
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding-left: 0;
+
+  .contact-detail {
+    span {
+      cursor: pointer;
+      font-size: 14px;
+      color: $text-light;
+
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
+}

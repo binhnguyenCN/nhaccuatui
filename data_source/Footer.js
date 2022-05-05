@@ -1,22 +1,31 @@
+import { MailFilled, PhoneFilled, ProfileFilled } from '@ant-design/icons';
+import React from 'react';
+
 const FooterData = {
-  contact: {
-    address: {
+  contact: [
+    {
       content:
         'Tầng 19, Tòa nhà The 678 Tower, Số 67 đường Hoàng Văn Thái, phường Tân Phú, quận 7, TP HCM.',
-      icon: 'abd',
+      title: 'address',
+      link: 'https://goo.gl/maps/QLUWVMBJvYZuY7nx7',
+      icon: <ProfileFilled />,
     },
-    email: {
+    {
       content: 'support@nct.vn',
-      icon: 'fds',
+      title: 'email',
+      link: 'mailto:support@nct.vn',
+      icon: <MailFilled />,
     },
-    phone: {
+    {
       content: '(028) 3868 7979',
-      icon: 'fds',
+      title: 'phone',
+      link: 'tel:02838687979',
+      icon: <PhoneFilled />,
     },
-    copyright: {
-      content: '© NCT Corp. All rights reserved',
-      icon: null,
-    },
+  ],
+  copyright: {
+    content: '© NCT Corp. All rights reserved',
+    title: 'copyright',
   },
 };
 

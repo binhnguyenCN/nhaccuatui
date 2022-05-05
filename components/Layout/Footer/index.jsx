@@ -1,13 +1,18 @@
+// libs
+import classnames from 'classnames';
 import React from 'react';
-
+// layout
+import FooterData from '../../../data_source/Footer';
+import FooterContact from './components/FooterContact';
+import FooterCopyright from './components/FooterCopyright';
 import styles from './styles.module.scss';
 
-const Footer = (props) => {
-  const { title } = props;
-  return (
-    <footer className={styles['footer-wrapper']}>
-      <h1>{title}</h1>
-    </footer>
-  );
-};
+const Footer = () => (
+  <footer className={classnames(styles['footer-wrapper'])}>
+    <div className={classnames(styles['footer-inner'])}>
+      <FooterContact contactInfo={FooterData.contact} />
+      <FooterCopyright copyright={FooterData.copyright} />
+    </div>
+  </footer>
+);
 export default Footer;
