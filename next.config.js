@@ -8,6 +8,9 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  images: {
+    domains: ['avatar-ex-swe.nixcdn.com'],
+  },
 };
 
 module.exports = nextConfig;

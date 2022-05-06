@@ -29,5 +29,7 @@ module.exports = {
     ],
     'react/function-component-definition': 0,
     'operator-linebreak': [2, 'after'],
+    'no-bitwise': [2, { allow: ['&', '|', '>>', '<<'] }],
+    'implicit-arrow-linebreak': 0,
   },
 };

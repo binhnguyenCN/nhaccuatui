@@ -60,6 +60,7 @@
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
     "sass-loader": "^12.6.0",
+    "storybook-addon-data": "^1.2.1",
     "storybook-addon-sass-postcss": "^0.1.1",
     "style-loader": "^3.3.1",
     "stylelint": "^14.7.1",
