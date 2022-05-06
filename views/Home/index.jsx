@@ -5,7 +5,7 @@ import {
   // categoryList,
   hotTopic,
   // newSong,
-  // songList,
+  songList,
   songRanking,
   // topSong,
   // videoList,
@@ -17,6 +17,7 @@ import {
   HotTopic,
   MVRanking,
 } from './mains';
+import Songs from './mains/Songs';
 
 import styles from './styles.module.scss';
 
@@ -27,16 +28,17 @@ const Home = () => (
       {/* Content */}
       {/* {categoryList.map((category) => (
         <Category type="album" albums={category} key={category.key} />
-      ))}
-      <Category type="album-hot" albums={newSong} title="mới phát hành" />
-      <Category type="mv" mvs={videoList} title="mv hot" />
-      <Category type="song" songs={songList} title="bài hát" />
-      <Category type="song-top" songs={topSong} title="top 100" />
-      <Category
+      ))} */}
+      {/* <Category type="album-hot" albums={newSong} title="mới phát hành" /> */}
+      {/* <Category type="mv" mvs={videoList} title="mv hot" /> */}
+
+      <Songs songs={songList} />
+      {/* <Category type="song-top" songs={topSong} title="top 100" /> */}
+      {/* <Category
         type="weekly-artist"
         artists={topSong}
         title="weekly artist chart"
-      /> */}
+      />  */}
       {/* Sidebar */}
       <SongRanking songs={songRanking} />
       <MVRanking mvs={songRanking} />

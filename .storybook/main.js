@@ -18,7 +18,6 @@ module.exports = {
         },
       },
     },
-    // 'storybook-addon-sass-postcss',
     {
       name: 'storybook-addon-next',
       options: {
