@@ -1,3 +1,12 @@
 .category-list {
-  // no-css
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+
+  .category-item {
+    width: 152px;
+    height: 152px;
+    background-color: red;
+  }
 }

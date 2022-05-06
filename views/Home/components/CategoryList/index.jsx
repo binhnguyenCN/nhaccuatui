@@ -5,7 +5,11 @@ import styles from './styles.module.scss';
 
 const CategoryList = () => (
   <ul className={styles['category-list']}>
-    <h1>Category list</h1>
+    <li className={styles['category-item']}>Category item</li>
+    <li className={styles['category-item']}>Category item</li>
+    <li className={styles['category-item']}>Category item</li>
+    <li className={styles['category-item']}>Category item</li>
+    <li className={styles['category-item']}>Category item</li>
   </ul>
 );
 
