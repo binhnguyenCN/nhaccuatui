@@ -2,16 +2,21 @@ import React from 'react';
 
 import {
   bannerList,
-  categoryList,
+  // categoryList,
   hotTopic,
-  newSong,
-  songList,
+  // newSong,
+  // songList,
   songRanking,
-  topSong,
-  videoList,
+  // topSong,
+  // videoList,
 } from '../../api/mockApi';
-import { Category, MVRanking } from './components';
-import { Slider, SongRanking, SuggestForYou, HotTopic } from './mains';
+import {
+  Slider,
+  SongRanking,
+  SuggestForYou,
+  HotTopic,
+  MVRanking,
+} from './mains';
 
 import styles from './styles.module.scss';
 
@@ -20,7 +25,7 @@ const Home = () => (
     <Slider banners={bannerList} />
     <div className={styles['content-grid']}>
       {/* Content */}
-      {categoryList.map((category) => (
+      {/* {categoryList.map((category) => (
         <Category type="album" albums={category} key={category.key} />
       ))}
       <Category type="album-hot" albums={newSong} title="mới phát hành" />
@@ -31,7 +36,7 @@ const Home = () => (
         type="weekly-artist"
         artists={topSong}
         title="weekly artist chart"
-      />
+      /> */}
       {/* Sidebar */}
       <SongRanking songs={songRanking} />
       <MVRanking mvs={songRanking} />

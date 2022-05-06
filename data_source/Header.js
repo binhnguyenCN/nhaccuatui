@@ -1,5 +1,5 @@
-// import { DashOutlined } from '@ant-design/icons';
-// import React from 'react';
+import { DashOutlined } from '@ant-design/icons';
+import React from 'react';
 
 const HeaderData = {
   menuList: [
@@ -122,9 +122,23 @@ const HeaderData = {
         },
       ],
     },
-    // {
-    //   title: <DashOutlined />,
-    // },
+    {
+      title: <DashOutlined />,
+      subMenu: [
+        {
+          title: 'VIỆT NAM',
+          list: ['Nhạc trẻ', 'Trữ tình', 'Nhạc Trịnh', 'Nhạc Trung'],
+        },
+        {
+          title: 'ÂU MỸ',
+          list: ['Nhạc trẻ', 'Trữ tình', 'Nhạc Trịnh', 'Nhạc Trung'],
+        },
+        {
+          title: 'CHÂU Á',
+          list: ['Nhạc trẻ', 'Trữ tình', 'Nhạc Trịnh', 'Nhạc Trung'],
+        },
+      ],
+    },
   ],
 };
 

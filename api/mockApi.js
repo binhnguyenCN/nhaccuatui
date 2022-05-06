@@ -1,13 +1,13 @@
-import data from './data.json';
+import mockData from './data';
 
-const songRanking = data.ranking;
-const categoryList = data.topicEvent;
-const newSong = data.newRelease;
-const songList = data.song;
-const hotTopic = data.topic;
-const videoList = data.video;
-const topSong = data.top100;
-const bannerList = data.showcase;
+const songRanking = mockData.ranking;
+const categoryList = mockData.topicEvent;
+const newSong = mockData.newRelease;
+const songList = mockData.song;
+const hotTopic = mockData.topic;
+const videoList = mockData.video;
+const topSong = mockData.top100;
+const bannerList = mockData.showcase;
 
 export {
   songRanking,

@@ -1,0 +1,18 @@
+@import "../../../../styles/App";
+
+.category-title {
+  cursor: pointer;
+
+  span {
+    span {
+      font-size: 27px;
+      font-weight: $font-weights-medium;
+      text-transform: uppercase;
+      color: $text-active;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}

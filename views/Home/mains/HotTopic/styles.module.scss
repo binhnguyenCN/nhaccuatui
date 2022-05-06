@@ -1,4 +1,7 @@
-.hot-topic {
+.hot-topic-wrapper {
   grid-area: hotTopic;
-  background-color: red;
+
+  .hot-topic-inner {
+    width: 100%;
+  }
 }
