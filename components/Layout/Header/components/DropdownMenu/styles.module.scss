@@ -1,15 +1,15 @@
 @import "../../../../../styles/App";
 
 .header-submenu {
+  position: absolute;
+  z-index: 1;
+  top: 38px;
+  left: 0;
   display: none;
   justify-content: space-around;
   align-items: center;
-  z-index: 1;
-  position: absolute;
-  top: 38px;
-  left: 0;
+  box-shadow: 0 3px 8px rgb(3 3 3 / 26%);
   width: 550px;
   padding: 30px;
   background-color: $text-light;
-  box-shadow: 0 3px 8px rgb(3 3 3 / 26%);
 }

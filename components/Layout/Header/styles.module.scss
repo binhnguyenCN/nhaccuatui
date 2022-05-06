@@ -1,7 +1,9 @@
+@import "../../../styles/App";
+
 .header-wrapper {
   width: 100%;
   height: 55px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid $text-secondary;
   margin-bottom: 5px;
   align-self: center;
 

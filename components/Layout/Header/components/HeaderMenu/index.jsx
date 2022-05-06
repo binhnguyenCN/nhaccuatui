@@ -1,6 +1,5 @@
 // libs
 import React from 'react';
-
 // layouts
 import HeaderData from '../../../../../data_source/Header';
 import HeaderMenuItem from '../HeaderMenuItem';

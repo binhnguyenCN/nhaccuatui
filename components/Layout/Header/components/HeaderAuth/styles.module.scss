@@ -1,24 +1,24 @@
 @import "../../../../../styles/App";
 
 .header-auth {
-  width: 180px;
-  border-left: 1px solid $text-secondary;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 180px;
+  border-left: 1px solid $text-secondary;
 
   .btn {
-    cursor: pointer;
-    padding: 10px;
     border: none;
-    width: 87px;
     border-radius: 5px;
+    width: 87px;
+    padding: 10px;
+    cursor: pointer;
     font-size: 13.5px;
     background-color: transparent;
 
     &-active {
-      background-image: $linear-color;
       color: $text-light;
+      background-image: $linear-color;
     }
   }
 }

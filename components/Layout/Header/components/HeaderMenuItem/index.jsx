@@ -1,7 +1,9 @@
-import React from 'react';
+// libs
 import Link from 'next/link';
-import styles from './styles.module.scss';
+import React from 'react';
+// layouts
 import DropdownMenu from '../DropdownMenu';
+import styles from './styles.module.scss';
 
 const HeaderMenuItem = (props) => {
   const { menuItem } = props;

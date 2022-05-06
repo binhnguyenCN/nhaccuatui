@@ -1,6 +1,6 @@
 // libs
 import React from 'react';
-
+// layout
 import CategoryTitles from '../../../../data_source/CategoryTitle';
 import CategoryTitle from '../../components/CategoryTitle';
 import TopicList from './components/TopicList';

@@ -1,24 +1,29 @@
+// libs
 import React from 'react';
-
+// layouts
 import {
   bannerList,
-  // categoryList,
+  categoryList,
   hotTopic,
-  // newSong,
+  newSong,
   songList,
   songRanking,
-  // topSong,
-  // videoList,
+  topSong,
+  videoList,
 } from '../../api/mockApi';
 import {
+  Albums,
+  HotTopic,
+  MVRanking,
+  MVs,
+  NewRelease,
   Slider,
   SongRanking,
   SuggestForYou,
-  HotTopic,
-  MVRanking,
+  TopSong,
+  WeeklyArtist,
+  Songs,
 } from './mains';
-import Songs from './mains/Songs';
-
 import styles from './styles.module.scss';
 
 const Home = () => (
@@ -26,19 +31,14 @@ const Home = () => (
     <Slider banners={bannerList} />
     <div className={styles['content-grid']}>
       {/* Content */}
-      {/* {categoryList.map((category) => (
-        <Category type="album" albums={category} key={category.key} />
-      ))} */}
-      {/* <Category type="album-hot" albums={newSong} title="mới phát hành" /> */}
-      {/* <Category type="mv" mvs={videoList} title="mv hot" /> */}
-
+      {categoryList.map((category) => (
+        <Albums albums={category} key={category.key} />
+      ))}
+      <NewRelease songs={newSong} />
+      <MVs videoList={videoList} />
       <Songs songs={songList} />
-      {/* <Category type="song-top" songs={topSong} title="top 100" /> */}
-      {/* <Category
-        type="weekly-artist"
-        artists={topSong}
-        title="weekly artist chart"
-      />  */}
+      <TopSong songs={topSong} />
+      <WeeklyArtist artists={topSong} />
       {/* Sidebar */}
       <SongRanking songs={songRanking} />
       <MVRanking mvs={songRanking} />

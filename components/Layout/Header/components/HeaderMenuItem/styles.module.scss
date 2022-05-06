@@ -1,11 +1,11 @@
 @import "../../../../../styles/App";
 
 .header-item {
-  cursor: pointer;
-  font-size: 14px;
   position: relative;
   top: 12px;
   height: 100%;
+  cursor: pointer;
+  font-size: 14px;
 
   > a:hover {
     color: $text-active;

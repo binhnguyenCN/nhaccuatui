@@ -2,8 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+// layouts
 import images from '../../../../../../constants/images';
-
 import styles from './styles.module.scss';
 
 const TopicItem = ({ topic }) => (

@@ -1,13 +1,10 @@
+// libs
 import React from 'react';
-
+// layouts
 import styles from './styles.module.scss';
-import categoryStyles from '../styles.module.scss';
 
 const TopSong = () => (
-  <article
-    className={`${categoryStyles.category}
-    ${styles['top-song-category']}`}
-  >
+  <article className={styles['top-song-wrapper']}>
     <h1>TOP-SONG CATEGORY</h1>
   </article>
 );

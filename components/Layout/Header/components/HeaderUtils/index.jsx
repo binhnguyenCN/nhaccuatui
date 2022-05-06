@@ -1,6 +1,6 @@
-// import Image from 'next/image';
+// libs
 import React from 'react';
-
+// layouts
 import images from '../../../../../constants/images';
 import styles from './styles.module.scss';
 

@@ -1,6 +1,7 @@
+// libs
 import Head from 'next/head';
 import React from 'react';
-
+// layouts
 import Home from '../views/Home';
 
 const HomePage = () => (

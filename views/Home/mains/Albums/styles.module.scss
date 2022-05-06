@@ -1,0 +1,13 @@
+.album-wrapper {
+  &:first-child {
+    grid-area: album1;
+  }
+
+  &:nth-child(2) {
+    grid-area: album2;
+  }
+
+  &:nth-child(3) {
+    grid-area: album3;
+  }
+}
