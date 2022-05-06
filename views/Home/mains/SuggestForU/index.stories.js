@@ -3,7 +3,7 @@ import React from 'react';
 import SuggestForU from './index';
 
 export default {
-  title: 'Components/SuggestForU',
+  title: 'Pages/Home/main/SuggestForU',
   component: SuggestForU,
 };
 export const Template = () => <SuggestForU />;

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Songs from './index';
+import Song from './index';
 
 export default {
-  title: 'Components/Songs',
-  component: Songs,
+  title: 'Pages/Home/main/Song',
+  component: Song,
 };
-export const Template = () => <Songs />;
+export const Template = () => <Song />;
