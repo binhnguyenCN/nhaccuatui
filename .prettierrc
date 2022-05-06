@@ -10,5 +10,5 @@
   "tabWidth": 2,
   "useTabs": false,
   "vueIndentScriptAndStyle": false,
-  "endOfLine": "lf"
+  "endOfLine": "auto"
 }
