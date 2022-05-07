@@ -17,17 +17,19 @@ const Albums = ({ albums }) => {
   };
   return (
     <div className={styles['albums-wrapper']}>
-      <CategoryTitle
-        title={{ content: getTitle(groupName), url: '/', icon: null }}
-      />
-      <CategoryList>
-        {listPlaylist.map((playlist, index) => {
-          if (index < 5) {
-            return <AlbumItem key={playlist.key} album={playlist} />;
-          }
-          return null;
-        })}
-      </CategoryList>
+      <div className={styles['album-inner']}>
+        <CategoryTitle
+          title={{ content: getTitle(groupName), url: '/', icon: null }}
+        />
+        <CategoryList>
+          {listPlaylist.map((playlist, index) => {
+            if (index < 5) {
+              return <AlbumItem key={playlist.key} album={playlist} />;
+            }
+            return null;
+          })}
+        </CategoryList>
+      </div>
     </div>
   );
 };
