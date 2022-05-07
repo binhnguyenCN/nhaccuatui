@@ -6,7 +6,7 @@ import Home from '../views/Home';
 // others
 import {
   bannerList,
-  categoryList,
+  albumList,
   hotTopic,
   newSong,
   songList,
@@ -19,7 +19,7 @@ export const getServerSideProps = async () => {
   // fetch data fake
   const data = {
     bannerList,
-    categoryList,
+    albumList,
     hotTopic,
     newSong,
     songList,

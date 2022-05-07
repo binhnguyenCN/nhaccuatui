@@ -1,7 +1,7 @@
 import mockData from './data';
 
 const songRanking = mockData.ranking;
-const categoryList = mockData.topicEvent;
+const albumList = mockData.topicEvent;
 const newSong = mockData.newRelease;
 const songList = mockData.song;
 const hotTopic = mockData.topic;
@@ -11,7 +11,7 @@ const bannerList = mockData.showcase;
 
 export {
   songRanking,
-  categoryList,
+  albumList,
   newSong,
   songList,
   hotTopic,

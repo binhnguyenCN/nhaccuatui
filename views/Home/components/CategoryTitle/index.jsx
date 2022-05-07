@@ -12,13 +12,12 @@ const CategoryTitle = ({ title }) => {
       <Link href={url}>
         <span>
           <span>{content}</span>
-          <span>
-            {icon && icon === 'more' ? (
-              <RightOutlined />
-            ) : (
-              <PlayCircleOutlined />
-            )}
-          </span>
+          {icon && (
+            <span>
+              {icon === 'play' && <PlayCircleOutlined />}
+              {icon === 'more' && <RightOutlined />}
+            </span>
+          )}
         </span>
       </Link>
     </h3>

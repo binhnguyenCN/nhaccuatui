@@ -5,9 +5,9 @@
   margin-bottom: 2rem;
   grid-gap: 40px;
   grid-template:
-    [row1-start] "album1 songRanking" 20rem [row1-end]
-    [row2-start] "album2 songRanking" 20rem [row2-end]
-    [row3-start] "album3 songRanking" 20rem [row3-end]
+    [row1-start] "album1 songRanking" 15rem [row1-end]
+    [row2-start] "album2 songRanking" 15rem [row2-end]
+    [row3-start] "album3 songRanking" 15rem [row3-end]
     [row4-start] "albumHot mvRanking" 40rem [row4-end]
     [row5-start] "mvList mvRanking" 5rem [row5-end]
     [row6-start] "mvList suggestForu" 15rem [row6-end]

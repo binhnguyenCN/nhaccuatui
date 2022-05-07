@@ -21,8 +21,8 @@ const Home = ({ data }) => (
   <>
     <Slider banners={data.bannerList} />
     <div className={styles['content-grid']}>
-      {data.categoryList.map((category) => (
-        <Albums albums={category} key={category.key} />
+      {data.albumList.map((album) => (
+        <Albums albums={album} key={album.key} />
       ))}
       <NewRelease songs={data.newSong} />
       <MVs videoList={data.videoList} />
