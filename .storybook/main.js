@@ -1,5 +1,12 @@
 const path = require('path');
 
+// module.exports = function getConfig() {
+//   return {
+//     publicRuntimeConfig: {},
+//     serverRuntimeConfig: {},
+//   };
+// };
+
 module.exports = {
   stories: [
     '../views/**/*.stories.@(js|jsx|ts|tsx)',
@@ -36,6 +43,11 @@ module.exports = {
       use: ['file-loader'],
       include: path.resolve(__dirname, '../public'),
     });
+    // config.resolve.alias = {
+    //   ...(config.resolve.alias || {}),
+    //   '~': path.join(__dirname, '../src'),
+    //   'next/config': path.join(__dirname, '../next-config.js'),
+    // };
     return config;
   },
 };

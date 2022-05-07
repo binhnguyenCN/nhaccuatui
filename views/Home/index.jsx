@@ -1,16 +1,7 @@
 // libs
 import React from 'react';
+
 // layouts
-import {
-  bannerList,
-  categoryList,
-  hotTopic,
-  newSong,
-  songList,
-  songRanking,
-  topSong,
-  videoList,
-} from '../../api/mockApi';
 import {
   Albums,
   HotTopic,
@@ -19,31 +10,29 @@ import {
   NewRelease,
   Slider,
   SongRanking,
+  Songs,
   SuggestForYou,
   TopSong,
   WeeklyArtist,
-  Songs,
 } from './mains';
 import styles from './styles.module.scss';
 
-const Home = () => (
+const Home = ({ data }) => (
   <>
-    <Slider banners={bannerList} />
+    <Slider banners={data.bannerList} />
     <div className={styles['content-grid']}>
-      {/* Content */}
-      {categoryList.map((category) => (
+      {data.categoryList.map((category) => (
         <Albums albums={category} key={category.key} />
       ))}
-      <NewRelease songs={newSong} />
-      <MVs videoList={videoList} />
-      <Songs songs={songList} />
-      <TopSong songs={topSong} />
-      <WeeklyArtist artists={topSong} />
-      {/* Sidebar */}
-      <SongRanking songs={songRanking} />
-      <MVRanking mvs={songRanking} />
+      <NewRelease songs={data.newSong} />
+      <MVs videoList={data.videoList} />
+      <Songs songs={data.songList} />
+      <TopSong songs={data.topSong} />
+      <WeeklyArtist artists={data.topSong} />
+      <SongRanking songs={data.songRanking} />
+      <MVRanking mvs={data.songRanking} />
       <SuggestForYou />
-      <HotTopic topics={hotTopic} />
+      <HotTopic topics={data.hotTopic} />
     </div>
   </>
 );

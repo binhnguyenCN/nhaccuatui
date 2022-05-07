@@ -9,7 +9,7 @@ module.exports = {
     'plugin:storybook/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 8,
     sourceType: 'module',
     ecmaFeatures: {
       modules: true,

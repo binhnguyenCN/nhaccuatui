@@ -3,8 +3,36 @@ import Head from 'next/head';
 import React from 'react';
 // layouts
 import Home from '../views/Home';
+// others
+import {
+  bannerList,
+  categoryList,
+  hotTopic,
+  newSong,
+  songList,
+  songRanking,
+  topSong,
+  videoList,
+} from '../api/mockApi';
 
-const HomePage = () => (
+export const getServerSideProps = async () => {
+  // fetch data fake
+  const data = {
+    bannerList,
+    categoryList,
+    hotTopic,
+    newSong,
+    songList,
+    songRanking,
+    topSong,
+    videoList,
+  };
+  return {
+    props: data,
+  };
+};
+
+const HomePage = (props) => (
   <>
     <Head>
       <meta charSet="UTF-8" />
@@ -14,7 +42,7 @@ const HomePage = () => (
       <title>nhaccuatui</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Home />
+    <Home data={props} />
   </>
 );
 export default HomePage;
