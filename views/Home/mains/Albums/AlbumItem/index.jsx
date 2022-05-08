@@ -15,10 +15,14 @@ const AlbumItem = ({ album }) => (
         height={152}
         blurDataURL={images.blurDataURL}
         alt="topic"
+        title={album.title}
       />
     </Link>
     <Link href={album.thumbnail}>
-      <span className={styles['album-title']}>{album.title}</span>
+      <span className={styles['album-title']}>
+        {album.title.substring(0, 20)}
+        {album.title.length > 40 && '...'}
+      </span>
     </Link>
   </li>
 );

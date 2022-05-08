@@ -4,14 +4,17 @@
   cursor: pointer;
 
   span {
+    display: flex;
+    align-items: center;
+
     span {
       font-size: 27px;
-      font-weight: $font-weights-medium;
+      font-weight: $font-weights-regular;
       text-transform: uppercase;
       color: $text-active;
 
       &:first-child {
-        margin-right: 20px;
+        margin-right: 10px;
       }
     }
   }

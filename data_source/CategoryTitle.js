@@ -9,5 +9,10 @@ const CategoryTitles = {
     url: '/',
     icon: 'more',
   },
+  newRelease: {
+    content: 'mới phát hành',
+    url: '/',
+    icon: 'more',
+  },
 };
 export default CategoryTitles;
