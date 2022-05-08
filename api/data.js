@@ -2439,6 +2439,42 @@ const mockData = {
       genreKey: '',
       streamUrls: [],
     },
+    {
+      key: 'E2LfBV6CSO',
+      title: 'Anh Lo Cho Em Hết',
+      thumbnail:
+        'https://avatar-ex-swe.nixcdn.com/mv/2022/04/22/d/8/1/d/1650617244595_640.jpg',
+      duration: '04:48',
+      artists: [
+        {
+          artistId: 49674,
+          name: 'Đàm Vĩnh Hưng',
+          shortLink: 'dam-vinh-hung',
+          imageUrl:
+            'https://avatar-ex-swe.nixcdn.com/singer/avatar/2022/04/19/b/5/c/c/1650363937009_300.jpg',
+        },
+        {
+          artistId: 95713,
+          name: 'Ricky Star',
+          shortLink: '',
+          imageUrl:
+            'https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/03/02/2/8/6/4/1614651512512_300.jpg',
+        },
+      ],
+      type: 'VIDEO',
+      dateRelease: 1650632400000,
+      dateCreate: 1650617244269,
+      uploadBy: null,
+      provider: null,
+      isMyPlaylist: false,
+      statusViewValue: 1,
+      statusPlayValue: 1,
+      statusDownloadValue: 2,
+      statusAddPlaylistValue: 0,
+      refMapping: [],
+      genreKey: '',
+      streamUrls: [],
+    },
   ],
   clientIp: '1.55.195.133',
   time: 1650791864840,

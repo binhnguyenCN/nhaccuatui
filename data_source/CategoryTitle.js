@@ -9,6 +9,11 @@ const CategoryTitles = {
     url: '/',
     icon: 'more',
   },
+  mvs: {
+    content: 'mv hot',
+    url: '/',
+    icon: 'more',
+  },
   newRelease: {
     content: 'mới phát hành',
     url: '/',

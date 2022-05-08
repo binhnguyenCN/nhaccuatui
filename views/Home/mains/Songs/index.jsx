@@ -8,8 +8,10 @@ import styles from './styles.module.scss';
 
 const Songs = ({ songs }) => (
   <div className={styles['songs-wrapper']}>
-    <CategoryTitle title={CategoryTitles.songs} />
-    <SongList songList={songs} />
+    <div className={styles['song-inner']}>
+      <CategoryTitle title={CategoryTitles.songs} />
+      <SongList songList={songs} />
+    </div>
   </div>
 );
 
