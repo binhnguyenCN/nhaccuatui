@@ -31,5 +31,14 @@ module.exports = {
     'operator-linebreak': [2, 'after'],
     'no-bitwise': [2, { allow: ['&', '|', '>>', '<<'] }],
     'implicit-arrow-linebreak': 0,
+    'import/no-unresolved': [
+      2,
+      {
+        commonjs: true,
+        amd: true,
+        caseSensitiveStrict: false,
+        caseSensitive: false,
+      },
+    ],
   },
 };

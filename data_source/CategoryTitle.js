@@ -14,5 +14,10 @@ const CategoryTitles = {
     url: '/',
     icon: 'more',
   },
+  songRanking: {
+    content: 'bxh bài hát',
+    url: '/',
+    icon: 'play',
+  },
 };
 export default CategoryTitles;

@@ -17,7 +17,7 @@ const Albums = ({ albums }) => {
   };
   return (
     <div className={styles['albums-wrapper']}>
-      <div className={styles['album-inner']}>
+      <div className={styles['albums-inner']}>
         <CategoryTitle
           title={{ content: getTitle(groupName), url: '/', icon: null }}
         />
