@@ -1,0 +1,25 @@
+@import "../../../../styles/App";
+
+.category-title {
+  cursor: pointer;
+
+  span {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 27px;
+      font-weight: $font-weights-regular;
+      text-transform: uppercase;
+      color: $text-active;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+}
