@@ -32,8 +32,11 @@ const MVItem = ({ mv, index }) => (
       </div>
     </div>
     <div className={styles['mv-info']}>
-      <Link href={mv.thumbnail}>
-        <span className={styles['mv-title']}>{mv.title}</span>
+      <Link title={mv.title} href={mv.thumbnail}>
+        <span className={styles['mv-title']}>
+          {mv.title.substring(0, 20)}
+          {mv.title.length > 20 && '...'}
+        </span>
       </Link>
       <span className={styles['artist-list']}>
         {mv.artists.map((artist, isFirstItem) => (
