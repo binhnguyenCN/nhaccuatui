@@ -7,6 +7,7 @@ import RankingOptions from '../../../../data_source/RankingOptions';
 import CategoryTitle from '../../components/CategoryTitle';
 import RankingList from '../../components/RankingList';
 import RankingOption from '../../components/RankingOption';
+import SongRankingItem from './SongRankingItem';
 import styles from './styles.module.scss';
 
 const SongRanking = ({ songs }) => (
@@ -14,7 +15,12 @@ const SongRanking = ({ songs }) => (
     <div className={styles['song-ranking-inner']}>
       <CategoryTitle title={CategoryTitles.songRanking} />
       <RankingOption options={RankingOptions.options} />
-      <RankingList />
+      <RankingList>
+        {songs &&
+          songs.map((song, index) => (
+            <SongRankingItem song={song} index={index + 1} />
+          ))}
+      </RankingList>
     </div>
   </div>
 );

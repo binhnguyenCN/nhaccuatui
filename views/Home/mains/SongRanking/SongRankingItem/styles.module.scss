@@ -1,0 +1,78 @@
+@import "../../../../../styles/App";
+
+.song-ranking-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid $text-secondary;
+
+  .song-ranking-thumbnail {
+    width: 20%;
+
+    .ranking-order {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 31px;
+      height: 31px;
+      font-size: 20px;
+      font-weight: $font-weights-bold;
+    }
+  }
+
+  .song-ranking-info {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 50px;
+    flex-direction: column;
+
+    .song-ranking-title {
+      cursor: pointer;
+      font-weight: $font-weights-medium;
+      margin-bottom: 5px;
+
+      &:hover {
+        color: $text-active;
+      }
+    }
+
+    .song-ranking-artists {
+      cursor: pointer;
+      font-size: 13px;
+      color: $text-secondary;
+
+      &:hover {
+        color: $text-active;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .ranking-order {
+      color: #1abc9c;
+    }
+  }
+
+  &:nth-child(3) {
+    .ranking-order {
+      color: #f39c12;
+    }
+  }
+
+  &:first-child {
+    .song-ranking-thumbnail {
+      position: relative;
+      width: 50%;
+
+      .ranking-order {
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        color: $text-light;
+        background-color: $background-danger;
+      }
+    }
+  }
+}

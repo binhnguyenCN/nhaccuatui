@@ -29,7 +29,7 @@ const Home = ({ data }) => (
       <Songs songs={data.songList} />
       <TopSong songs={data.topSong} />
       <WeeklyArtist artists={data.topSong} />
-      <SongRanking songs={data.songRanking} />
+      <SongRanking songs={data.songRanking.song} />
       <MVRanking mvs={data.songRanking} />
       <SuggestForYou />
       <HotTopic topics={data.hotTopic} />
