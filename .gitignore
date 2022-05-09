@@ -4,14 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/.vscode
 # testing
 /coverage
-
+/.husky
 # next.js
 /.next/
 /out/
-
+storybook-static
 # production
 /build
 
