@@ -18,7 +18,7 @@ const SongRanking = ({ songs }) => (
       <RankingList>
         {songs &&
           songs.map((song, index) => (
-            <SongRankingItem song={song} index={index + 1} />
+            <SongRankingItem song={song} index={index + 1} key={song.key} />
           ))}
       </RankingList>
     </div>
