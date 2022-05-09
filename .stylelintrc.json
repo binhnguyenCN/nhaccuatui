@@ -1,5 +1,6 @@
 {
   "extends": [
+    "stylelint-scss",
     "stylelint-config-prettier-scss",
     "stylelint-config-standard-scss"
   ],

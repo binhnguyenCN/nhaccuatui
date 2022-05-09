@@ -1,8 +1,14 @@
 const path = require('path');
 
+// module.exports = function getConfig() {
+//   return {
+//     publicRuntimeConfig: {},
+//     serverRuntimeConfig: {},
+//   };
+// };
+
 module.exports = {
   stories: [
-    // '../stories/**/*.stories.mdx',
     '../views/**/*.stories.@(js|jsx|ts|tsx)',
     '../components/**/*.stories.@(js|jsx|ts|tsx)',
   ],
@@ -10,6 +16,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/preset-scss',
     {
       name: '@storybook/addon-postcss',
       options: {
@@ -18,7 +25,6 @@ module.exports = {
         },
       },
     },
-    'storybook-addon-sass-postcss',
     {
       name: 'storybook-addon-next',
       options: {
@@ -26,9 +32,22 @@ module.exports = {
       },
     },
   ],
-  staticDirs: ['../public/fonts'],
+  staticDirs: ['../public'],
   framework: '@storybook/react',
   core: {
     builder: '@storybook/builder-webpack5',
+  },
+  webpackFinal: async (config, { configType }) => {
+    config.module.rules.push({
+      test: /\.(jpe?g|png|svg|gif|ico|eot|ttf|woff|woff2|mp4|pdf|webm|txt)$/,
+      use: ['file-loader'],
+      include: path.resolve(__dirname, '../public'),
+    });
+    // config.resolve.alias = {
+    //   ...(config.resolve.alias || {}),
+    //   '~': path.join(__dirname, '../src'),
+    //   'next/config': path.join(__dirname, '../next-config.js'),
+    // };
+    return config;
   },
 };

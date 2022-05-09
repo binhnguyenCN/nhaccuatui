@@ -9,7 +9,7 @@ module.exports = {
     'plugin:storybook/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 8,
     sourceType: 'module',
     ecmaFeatures: {
       modules: true,
@@ -28,5 +28,17 @@ module.exports = {
       },
     ],
     'react/function-component-definition': 0,
+    'operator-linebreak': [2, 'after'],
+    'no-bitwise': [2, { allow: ['&', '|', '>>', '<<'] }],
+    'implicit-arrow-linebreak': 0,
+    'import/no-unresolved': [
+      2,
+      {
+        commonjs: true,
+        amd: true,
+        caseSensitiveStrict: false,
+        caseSensitive: false,
+      },
+    ],
   },
 };

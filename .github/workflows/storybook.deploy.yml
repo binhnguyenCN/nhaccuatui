@@ -23,17 +23,23 @@ jobs:
     steps:
       - name: Get files
         uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - uses: borales/actions-yarn@v2.3.0
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - name: Install packages
-        run: npm ci
-      - name: Build project
-        run: npm run build-storybook
-      - name: Add .nojekyll file
-        run: touch ./storybook-static/.nojekyll
+          cmd: install
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: build-storybook
+      # - name: Use Node.js ${{ matrix.node-version }}
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: ${{ matrix.node-version }}
+      #     cache: 'npm'
+      # - name: Install packages
+      #   run: npm ci
+      # - name: Build project
+      #   run: npm run build-storybook
+      # - name: Add .nojekyll file
+      #   run: touch ./storybook-static/.nojekyll
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
