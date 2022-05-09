@@ -13,14 +13,16 @@ const MVItem = ({ mv, index }) => (
   <li key={mv.key} className={styles['mv-item']}>
     <div className={styles['mv-thumbnail']}>
       <Link href={mv.thumbnail}>
-        <Image
-          src={mv.thumbnail}
-          width={index < 2 ? 410 : 195}
-          height={index < 2 ? 230 : 109}
-          blurDataURL={images.blurDataURL}
-          alt="topic"
-          title={mv.title}
-        />
+        <span>
+          <Image
+            src={mv.thumbnail}
+            width={index < 2 ? 410 : 195}
+            height={index < 2 ? 230 : 109}
+            blurDataURL={images.blurDataURL}
+            alt="topic"
+            title={mv.title}
+          />
+        </span>
       </Link>
       <div className={classnames(styles['thumbnail-dark-layer'])} />
       <div className={classnames(styles['thumbnail-play-icon'])}>

@@ -20,13 +20,15 @@ const SongItem = ({ song }) => {
       <div className={styles['song-info']}>
         <div className={styles['song-thumbnail']}>
           <Link href={song.thumbnail}>
-            <Image
-              src={song.thumbnail}
-              width={60}
-              height={60}
-              blurDataURL={images.blurDataURL}
-              alt={song.title}
-            />
+            <span>
+              <Image
+                src={song.thumbnail}
+                width={60}
+                height={60}
+                blurDataURL={images.blurDataURL}
+                alt={song.title}
+              />
+            </span>
           </Link>
         </div>
         <div className={styles['song-desc']}>

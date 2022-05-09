@@ -14,14 +14,16 @@ const NewReleaseItem = ({ song }) => (
   <li className={styles['album-hot-item']}>
     <div className={styles['album-thumbnail']}>
       <Link href={song.thumbnail}>
-        <Image
-          src={song.thumbnail}
-          width={152}
-          height={152}
-          blurDataURL={images.blurDataURL}
-          alt="topic"
-          title={song.title}
-        />
+        <span>
+          <Image
+            src={song.thumbnail}
+            width={152}
+            height={152}
+            blurDataURL={images.blurDataURL}
+            alt="topic"
+            title={song.title}
+          />
+        </span>
       </Link>
       <div className={classnames(styles['thumbnail-dark-layer'])} />
       <div className={classnames(styles['thumbnail-play-icon'])}>

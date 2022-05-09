@@ -10,13 +10,15 @@ const TopSongItem = ({ song }) => (
   <li className={styles['top-song-item']} title={song.title}>
     <div className={styles['top-song-thumbnail']}>
       <Link href={song.thumbnail}>
-        <Image
-          src={song.thumbnail}
-          width={152}
-          height={152}
-          blurDataURL={images.blurDataURL}
-          alt={song.title}
-        />
+        <span>
+          <Image
+            src={song.thumbnail}
+            width={152}
+            height={152}
+            blurDataURL={images.blurDataURL}
+            alt={song.title}
+          />
+        </span>
       </Link>
     </div>
   </li>
