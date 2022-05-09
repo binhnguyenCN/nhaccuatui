@@ -1,11 +1,26 @@
 // libs
 import React from 'react';
-// layouts
-import styles from './styles.module.scss';
 
-const WeeklyArtist = () => (
+// layouts
+import CategoryTitles from '../../../../data_source/CategoryTitle';
+import CategoryList from '../../components/CategoryList';
+import CategoryTitle from '../../components/CategoryTitle';
+import styles from './styles.module.scss';
+import WeeklyArtistItem from './WeeklyArtistItem';
+
+const WeeklyArtist = ({ artists }) => (
   <article className={styles['weekly-artist-wrapper']}>
-    <h1>WEEKLY ARTIST CATEGORY</h1>
+    <div className={styles['weekly-artist-inner']}>
+      <CategoryTitle title={CategoryTitles.weeklyArtist} />
+      <CategoryList>
+        {artists.map((artist, index) => {
+          if (index < 5) {
+            return <WeeklyArtistItem artist={artist} />;
+          }
+          return null;
+        })}
+      </CategoryList>
+    </div>
   </article>
 );
 export default WeeklyArtist;
