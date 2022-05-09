@@ -1,11 +1,26 @@
 // libs
 import React from 'react';
-// layouts
-import styles from './styles.module.scss';
 
-const TopSong = () => (
+// layouts
+import CategoryTitles from '../../../../data_source/CategoryTitle';
+import CategoryList from '../../components/CategoryList';
+import CategoryTitle from '../../components/CategoryTitle';
+import styles from './styles.module.scss';
+import TopSongItem from './TopSongItem';
+
+const TopSong = ({ songs }) => (
   <article className={styles['top-song-wrapper']}>
-    <h1>TOP-SONG CATEGORY</h1>
+    <div className={styles['top-song-inner']}>
+      <CategoryTitle title={CategoryTitles.topSong} />
+      <CategoryList>
+        {songs.map((song, index) => {
+          if (index < 5) {
+            return <TopSongItem song={song} />;
+          }
+          return null;
+        })}
+      </CategoryList>
+    </div>
   </article>
 );
 export default TopSong;

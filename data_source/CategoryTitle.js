@@ -24,5 +24,15 @@ const CategoryTitles = {
     url: '/',
     icon: 'play',
   },
+  topSong: {
+    content: 'top 100',
+    url: '/',
+    icon: 'more',
+  },
+  weeklyArtist: {
+    content: 'weekly artist chart',
+    url: '/',
+    icon: 'more',
+  },
 };
 export default CategoryTitles;
