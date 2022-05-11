@@ -1,0 +1,43 @@
+@import "../../../../styles/App";
+
+.ranking-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 25px;
+  width: 100%;
+  padding: 0;
+
+  .ranking-item {
+    width: 33.33%;
+
+    .ranking-btn {
+      transition: 0.3s;
+      border: none;
+      width: 100%;
+      padding: 10px;
+      color: $text-primary;
+      background-color: $background-secondary;
+    }
+
+    &-active {
+      .ranking-btn {
+        color: $text-light;
+        background-color: $background-danger;
+      }
+    }
+
+    &:hover {
+      .ranking-btn {
+        color: $text-light;
+        background-color: $background-danger;
+      }
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid $text-light;
+      border-right: 1px solid $text-light;
+    }
+  }
+}
