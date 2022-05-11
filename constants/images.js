@@ -15,5 +15,8 @@ export default {
   newVersion: 'images/ic_new.png',
   store: 'images/ic_store.png',
   upload: 'images/ic_upload.png',
+  bct: 'images/t_bo_cong_thuong.png',
+  dmca: 'images/t_dmca.png',
+  logoCompany: 'images/t_logo_company.png',
   blurDataURL: rgbDataURL(2, 129, 210),
 };
