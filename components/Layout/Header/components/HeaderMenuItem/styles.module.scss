@@ -1,0 +1,19 @@
+@import "../../../../../styles/App";
+
+.header-item {
+  position: relative;
+  top: 12px;
+  height: 100%;
+  cursor: pointer;
+  font-size: 14px;
+
+  > a:hover {
+    color: $text-active;
+  }
+
+  &:hover {
+    .header-submenu {
+      display: flex;
+    }
+  }
+}
