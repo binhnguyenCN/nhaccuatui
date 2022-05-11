@@ -1,0 +1,58 @@
+@import "../../../../../styles/App";
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding: 5px 0;
+  background-color: #fff;
+  border-top: 1px solid $text-secondary;
+
+  .song-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+
+    .song-thumbnail {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .song-desc {
+      .song-title {
+        cursor: pointer;
+        margin-bottom: 3px;
+
+        &:hover {
+          color: $text-active;
+        }
+      }
+
+      .song-artists {
+        cursor: pointer;
+        font-size: 12px;
+        color: $text-secondary;
+
+        &:hover {
+          color: $text-active;
+        }
+      }
+    }
+  }
+
+  .song-views {
+    color: $text-secondary;
+
+    span {
+      &:first-child {
+        margin-right: 3px;
+      }
+    }
+  }
+
+  &:nth-child(2n) {
+    margin-left: 15px;
+  }
+}
