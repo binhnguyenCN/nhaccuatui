@@ -1,0 +1,27 @@
+.weekly-artist-item {
+  position: relative;
+  cursor: pointer;
+
+  .weekly-artist-thumbnail {
+    img {
+      border-radius: 50%;
+    }
+
+    .thumbnail-dark-layer {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: none;
+      border-radius: 50%;
+      background-color: rgb(51 51 51 / 39.1%);
+    }
+
+    &:hover {
+      .thumbnail-dark-layer {
+        display: block;
+      }
+    }
+  }
+}
