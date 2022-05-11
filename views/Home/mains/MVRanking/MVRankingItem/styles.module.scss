@@ -1,0 +1,99 @@
+@import "../../../../../styles/App";
+
+.mv-ranking-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid $text-secondary;
+
+  .mv-ranking-thumbnail {
+    position: relative;
+    width: 110px;
+    height: 62px;
+    margin-right: 10px;
+
+    .ranking-order {
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 31px;
+      height: 31px;
+      font-size: 20px;
+      font-weight: $font-weights-bold;
+      color: $text-light;
+    }
+  }
+
+  .mv-ranking-info {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 50px;
+    flex-direction: column;
+
+    .mv-ranking-title {
+      cursor: pointer;
+      font-weight: $font-weights-medium;
+      margin-bottom: 5px;
+
+      &:hover {
+        color: $text-active;
+      }
+    }
+
+    .mv-ranking-artists {
+      cursor: pointer;
+      font-size: 13px;
+      color: $text-secondary;
+
+      a:hover {
+        color: $text-active;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .ranking-order {
+      color: #1abc9c;
+    }
+  }
+
+  &:nth-child(3) {
+    .ranking-order {
+      color: #f39c12;
+    }
+  }
+
+  &:first-child {
+    .mv-ranking-thumbnail {
+      width: 300px;
+      height: 168px;
+      margin-right: 0;
+
+      .ranking-order {
+        width: 46px;
+        height: 46px;
+        background-color: $background-danger;
+      }
+    }
+
+    .mv-ranking-info {
+      position: absolute;
+      bottom: 10px;
+      left: 55px;
+
+      .mv-ranking-title {
+        color: $text-light;
+
+        &:hover {
+          color: $text-active;
+        }
+      }
+    }
+  }
+}
