@@ -1,0 +1,22 @@
+@import "../../../../../styles/App";
+
+.album-item {
+  display: flex;
+  flex-direction: column;
+  width: 152px;
+  height: 220px;
+
+  img {
+    cursor: pointer;
+  }
+
+  .album-title {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      color: $text-active;
+    }
+  }
+}
