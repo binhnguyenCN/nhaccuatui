@@ -1,0 +1,50 @@
+@import "../../../styles/App";
+
+.company-info-wrapper {
+  width: 100%;
+  background-color: $background-secondary;
+  align-self: center;
+
+  .company-info-inner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    padding: 5px 0;
+
+    .info-navigation-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .company-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 2px solid $text-secondary;
+      padding-top: 30px;
+
+      .info-desc {
+        padding: 0;
+
+        &-title {
+          font-weight: $font-weights-bold;
+          text-transform: uppercase;
+          color: $text-secondary;
+        }
+
+        &-standard {
+          list-style-type: disc;
+          padding-left: 20px;
+
+          &-item {
+            font-size: 14px;
+            line-height: 1.5;
+            color: $text-secondary;
+          }
+        }
+      }
+    }
+  }
+}
