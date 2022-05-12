@@ -2,6 +2,7 @@
 import React from 'react';
 // layouts
 import TopicItem from '../TopicItem';
+// others
 import styles from './styles.module.scss';
 
 const TopicList = ({ topics }) => (

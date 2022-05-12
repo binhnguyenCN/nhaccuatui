@@ -1,6 +1,6 @@
 // libs
 import React from 'react';
-// layouts
+// others
 import styles from './styles.module.scss';
 
 const RankingList = ({ children }) => (

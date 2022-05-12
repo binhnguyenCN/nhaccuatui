@@ -1,7 +1,7 @@
 // libs
 import classnames from 'classnames';
 import React from 'react';
-// layout
+// others
 import styles from './styles.module.scss';
 
 const FooterCopyright = ({ copyright }) => (

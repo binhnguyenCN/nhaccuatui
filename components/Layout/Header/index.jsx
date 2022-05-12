@@ -2,11 +2,12 @@
 import Link from 'next/link';
 import React from 'react';
 // layouts
-import images from '../../../constants/images';
 import HeaderAuth from './components/HeaderAuth';
 import HeaderMenu from './components/HeaderMenu';
 import HeaderUtils from './components/HeaderUtils';
 import SearchBar from './components/SearchBar';
+// others
+import images from '../../../constants/images';
 import styles from './styles.module.scss';
 
 const Header = () => (

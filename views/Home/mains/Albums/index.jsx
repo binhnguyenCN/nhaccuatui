@@ -4,6 +4,7 @@ import React from 'react';
 import CategoryList from '../../components/CategoryList';
 import CategoryTitle from '../../components/CategoryTitle';
 import AlbumItem from './AlbumItem';
+// others
 import styles from './styles.module.scss';
 
 const Albums = ({ albums }) => {

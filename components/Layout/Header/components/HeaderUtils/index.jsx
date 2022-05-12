@@ -1,6 +1,7 @@
 // libs
 import React from 'react';
-// layouts
+
+// others
 import images from '../../../../../constants/images';
 import styles from './styles.module.scss';
 

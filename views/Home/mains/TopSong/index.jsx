@@ -1,12 +1,12 @@
 // libs
 import React from 'react';
-
 // layouts
 import CategoryTitles from '../../../../data_source/CategoryTitle';
 import CategoryList from '../../components/CategoryList';
 import CategoryTitle from '../../components/CategoryTitle';
-import styles from './styles.module.scss';
 import TopSongItem from './TopSongItem';
+// others
+import styles from './styles.module.scss';
 
 const TopSong = ({ songs }) => (
   <article className={styles['top-song-wrapper']}>

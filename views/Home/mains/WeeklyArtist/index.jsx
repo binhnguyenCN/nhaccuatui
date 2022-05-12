@@ -5,8 +5,10 @@ import React from 'react';
 import CategoryTitles from '../../../../data_source/CategoryTitle';
 import CategoryList from '../../components/CategoryList';
 import CategoryTitle from '../../components/CategoryTitle';
-import styles from './styles.module.scss';
 import WeeklyArtistItem from './WeeklyArtistItem';
+
+// others
+import styles from './styles.module.scss';
 
 const WeeklyArtist = ({ artists }) => (
   <article className={styles['weekly-artist-wrapper']}>

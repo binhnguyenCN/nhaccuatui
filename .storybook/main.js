@@ -9,7 +9,6 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    // '@storybook/preset-scss',
     {
       name: '@storybook/addon-postcss',
       options: {
@@ -18,7 +17,6 @@ module.exports = {
         },
       },
     },
-    // 'storybook-addon-next',
     {
       name: 'storybook-addon-next',
       options: {
@@ -31,17 +29,4 @@ module.exports = {
   core: {
     builder: '@storybook/builder-webpack5',
   },
-  // webpackFinal: async (config, { configType }) => {
-  //   config.module.rules.push({
-  //     test: /\.(jpe?g|png|svg|gif|ico|eot|ttf|woff|woff2|mp4|pdf|webm|txt)$/,
-  //     use: ['file-loader'],
-  //     include: path.resolve(__dirname, '../public'),
-  //   });
-  //   config.resolve.alias = {
-  //     ...(config.resolve.alias || {}),
-  //     '~': path.join(__dirname, '../src'),
-  //     'next/config': path.join(__dirname, '../next-config.js'),
-  //   };
-  //   return config;
-  // },
 };
