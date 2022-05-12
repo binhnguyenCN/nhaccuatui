@@ -4,6 +4,7 @@ import React from 'react';
 import CategoryTitles from '../../../../data_source/CategoryTitle';
 import CategoryTitle from '../../components/CategoryTitle';
 import TopicList from './components/TopicList';
+// others
 import styles from './styles.module.scss';
 
 const HotTopic = ({ topics }) => (

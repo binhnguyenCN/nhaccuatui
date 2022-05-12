@@ -4,6 +4,7 @@ import React from 'react';
 import CategoryTitles from '../../../../data_source/CategoryTitle';
 import CategoryTitle from '../../components/CategoryTitle';
 import SongList from './SongList';
+// others
 import styles from './styles.module.scss';
 
 const Songs = ({ songs }) => (

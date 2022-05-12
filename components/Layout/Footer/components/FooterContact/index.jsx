@@ -2,7 +2,7 @@
 import classnames from 'classnames';
 import Link from 'next/link';
 import React from 'react';
-// layout
+// others
 import styles from './styles.module.scss';
 
 const FooterContact = ({ contactInfo }) => (

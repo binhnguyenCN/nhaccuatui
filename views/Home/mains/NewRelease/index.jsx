@@ -6,6 +6,7 @@ import CategoryTitles from '../../../../data_source/CategoryTitle';
 import CategoryList from '../../components/CategoryList';
 import CategoryTitle from '../../components/CategoryTitle';
 import NewReleaseItem from './NewReleaseItem';
+// others
 import styles from './styles.module.scss';
 
 const NewRelease = ({ songs }) => (

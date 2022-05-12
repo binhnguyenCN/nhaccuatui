@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 // layouts
 import DropdownMenu from '../DropdownMenu';
+// others
 import styles from './styles.module.scss';
 
 const HeaderMenuItem = (props) => {

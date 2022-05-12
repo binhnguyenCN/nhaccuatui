@@ -2,7 +2,7 @@
 import { PlayCircleOutlined, RightOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import React from 'react';
-// layouts
+// others
 import styles from './styles.module.scss';
 
 const CategoryTitle = ({ title }) => {
