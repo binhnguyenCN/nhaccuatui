@@ -4,7 +4,6 @@ import Link from 'next/link';
 import React from 'react';
 import classnames from 'classnames';
 import { CustomerServiceOutlined, PlayCircleOutlined } from '@ant-design/icons';
-
 // layouts
 import styles from './styles.module.scss';
 // others

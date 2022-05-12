@@ -5,6 +5,7 @@ import React from 'react';
 import FooterData from '../../../data_source/Footer';
 import FooterContact from './components/FooterContact';
 import FooterCopyright from './components/FooterCopyright';
+// others
 import styles from './styles.module.scss';
 
 const Footer = () => (

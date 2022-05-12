@@ -2,9 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+// others
 import images from '../../../../../constants/images';
-
-// layouts
 import styles from './styles.module.scss';
 
 const WeeklyArtistItem = ({ artist }) => (

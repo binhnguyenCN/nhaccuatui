@@ -8,6 +8,8 @@ import CategoryTitle from '../../components/CategoryTitle';
 import RankingList from '../../components/RankingList';
 import RankingOption from '../../components/RankingOption';
 import SongRankingItem from './SongRankingItem';
+
+// others
 import styles from './styles.module.scss';
 
 const SongRanking = ({ songs }) => (

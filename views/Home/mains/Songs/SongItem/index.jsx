@@ -3,7 +3,7 @@ import { CustomerServiceOutlined } from '@ant-design/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-// layouts
+// others
 import images from '../../../../../constants/images';
 import styles from './styles.module.scss';
 

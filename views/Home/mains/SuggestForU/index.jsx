@@ -3,8 +3,9 @@ import { CaretRightOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import React from 'react';
 // layouts
-import colors from '../../../../constants/colors';
 import ContentPlaylist from '../../../../data_source/SuggestForU';
+// others
+import colors from '../../../../constants/colors';
 import styles from './styles.module.scss';
 
 const SuggestForYou = () => (

@@ -2,6 +2,7 @@
 import React from 'react';
 // layouts
 import SongItem from '../SongItem';
+// others
 import styles from './styles.module.scss';
 
 const SongList = ({ songList }) => (
