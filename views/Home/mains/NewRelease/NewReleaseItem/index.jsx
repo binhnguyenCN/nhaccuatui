@@ -34,9 +34,9 @@ const NewReleaseItem = ({ song }) => (
         <span className={styles['album-title']}>{song.title}</span>
       </Link>
       <span className={styles['artist-list']}>
-        {song.artists.map((artist, index) => (
+        {song.artists.map((artist, notFirstItem) => (
           <Link href={artist.imageUrl || '/'} key={artist.artistId}>
-            {index ? `, ${artist.name}` : artist.name}
+            {notFirstItem ? `, ${artist.name}` : artist.name}
           </Link>
         ))}
       </span>

@@ -1,4 +1,5 @@
 // libs
+import Link from 'next/link';
 import React from 'react';
 
 // layouts
@@ -20,7 +21,13 @@ const SongRankingItem = ({ song, index }) => (
     </div>
     <div className={styles['song-ranking-info']}>
       <div className={styles['song-ranking-title']}>{song.title}</div>
-      <div className={styles['song-ranking-artists']}>{song.title}</div>
+      <div className={styles['song-ranking-artists']}>
+        {song.artists.map((artist, notFirstItem) => (
+          <Link href={artist.imageUrl || '/'} key={artist.artistId}>
+            {notFirstItem ? `, ${artist.name}` : artist.name}
+          </Link>
+        ))}
+      </div>
     </div>
   </li>
 );
