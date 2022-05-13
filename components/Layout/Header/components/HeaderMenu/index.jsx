@@ -1,16 +1,25 @@
 // libs
 import React from 'react';
+import { useLocale } from '../../../../../context/LocaleContext';
 // layouts
 import HeaderData from '../../../../../data_source/Header';
 import HeaderMenuItem from '../HeaderMenuItem';
 // others
 import styles from './styles.module.scss';
 
-const HeaderMenu = () => (
-  <ul className={styles['header-menu']}>
-    {HeaderData.menuList.map((menuItem) => (
-      <HeaderMenuItem menuItem={menuItem} key={menuItem.title} />
-    ))}
-  </ul>
-);
+const HeaderMenu = () => {
+  const { localDataSource } = useLocale();
+
+  return (
+    <ul className={styles['header-menu']}>
+      {HeaderData.menuList.map((menuItem, index) => (
+        <HeaderMenuItem
+          menuItem={menuItem}
+          key={menuItem.title}
+          title={localDataSource.header.menuList[index].title}
+        />
+      ))}
+    </ul>
+  );
+};
 export default HeaderMenu;

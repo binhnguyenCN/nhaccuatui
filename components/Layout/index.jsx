@@ -6,13 +6,16 @@ import Header from './Header';
 import CompanyInfo from './CompanyInfo';
 // others
 import styles from './styles.module.scss';
+import { ProvideLocale } from '../../context/LocaleContext';
 
 const Layout = ({ children }) => (
   <div className={styles.container}>
-    <Header />
-    {children}
-    <CompanyInfo />
-    <Footer />
+    <ProvideLocale>
+      <Header />
+      {children}
+      <CompanyInfo />
+      <Footer />
+    </ProvideLocale>
   </div>
 );
 export default Layout;
