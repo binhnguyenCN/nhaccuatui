@@ -1,4 +1,4 @@
-const mockData = {
+const data = {
   status: 'success',
   newRelease: {
     song: [
@@ -2539,4 +2539,4 @@ const mockData = {
   clientIp: '1.55.195.133',
   time: 1650791864840,
 };
-export default mockData;
+export default data;
