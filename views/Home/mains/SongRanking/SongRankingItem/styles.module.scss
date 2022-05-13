@@ -60,6 +60,8 @@
   }
 
   &:first-child {
+    height: 100px;
+
     .song-ranking-thumbnail {
       position: relative;
       width: 50%;
@@ -75,6 +77,7 @@
 
     .song-ranking-info {
       justify-content: flex-start;
+      height: 100%;
     }
   }
 }

@@ -1,6 +1,5 @@
 // libs
 import React from 'react';
-
 // layouts
 import {
   Albums,
@@ -15,24 +14,34 @@ import {
   TopSong,
   WeeklyArtist,
 } from './mains';
+// others
 import styles from './styles.module.scss';
 
-const Home = ({ data }) => (
+const Home = ({
+  bannerList,
+  albumList,
+  newSong,
+  videoList,
+  songList,
+  topSong,
+  songRanking,
+  hotTopic,
+}) => (
   <>
-    <Slider banners={data.bannerList} />
+    <Slider banners={bannerList} />
     <div className={styles['content-grid']}>
-      {data.albumList.map((album) => (
+      {albumList.map((album) => (
         <Albums albums={album} key={album.key} />
       ))}
-      <NewRelease songs={data.newSong} />
-      <MVs videoList={data.videoList} />
-      <Songs songs={data.songList} />
-      <TopSong songs={data.topSong} />
-      <WeeklyArtist artists={data.topSong} />
-      <SongRanking songs={data.songRanking.song} />
-      <MVRanking mvs={data.videoList} />
+      <NewRelease songs={newSong} />
+      <MVs videoList={videoList} />
+      <Songs songs={songList} />
+      <TopSong songs={topSong} />
+      <WeeklyArtist artists={topSong} />
+      <SongRanking songs={songRanking.song} />
+      <MVRanking mvs={videoList} />
       <SuggestForYou />
-      <HotTopic topics={data.hotTopic} />
+      <HotTopic topics={hotTopic} />
     </div>
   </>
 );

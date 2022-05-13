@@ -1,22 +1,14 @@
 // libs
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 // others
-import images from '../../../../../../constants/images';
 import styles from './styles.module.scss';
 
-const TopicItem = ({ topic }) => (
+const TopicItem = ({ thumbURL, coverImageURL }) => (
   <li className={styles['topic-item']}>
-    <Link href={topic.thumbURL}>
+    <Link href={thumbURL}>
       <span>
-        <Image
-          src={topic.coverImageURL}
-          width={300}
-          height={100}
-          blurDataURL={images.blurDataURL}
-          alt="topic"
-        />
+        <img src={coverImageURL} width={300} height={100} alt="topic" />
       </span>
     </Link>
   </li>

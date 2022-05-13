@@ -25,7 +25,13 @@ const Albums = ({ albums }) => {
         <CategoryList>
           {listPlaylist.map((playlist, index) => {
             if (index < 5) {
-              return <AlbumItem key={playlist.key} album={playlist} />;
+              return (
+                <AlbumItem
+                  key={playlist.key}
+                  title={playlist.title}
+                  thumbnail={playlist.thumbnail}
+                />
+              );
             }
             return null;
           })}

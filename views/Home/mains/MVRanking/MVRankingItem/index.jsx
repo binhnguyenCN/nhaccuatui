@@ -1,20 +1,17 @@
 // libs
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 // layouts
-import images from '../../../../../constants/images';
 import styles from './styles.module.scss';
 
 const MVRankingItem = ({ mv, index }) => (
   <li className={styles['mv-ranking-item']}>
     <div className={styles['mv-ranking-thumbnail']}>
-      <Image
+      <img
         src={mv.thumbnail}
         width={index === 1 ? 300 : 110}
         height={index === 1 ? 168 : 62}
-        blurDataURL={images.blurDataURL}
         alt="mv ranking"
         title={mv.title}
       />

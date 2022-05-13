@@ -1,11 +1,11 @@
 import React from 'react';
 
 import MVs from '.';
-import { videoList } from '../../../../api/mockApi';
+import mockData from '../../../../api/mockApi';
 
 export default {
   title: 'Pages/Home/main/MVs',
   component: MVs,
-  parameters: { videoList },
+  parameters: { videoList: mockData.videoList },
 };
-export const Template = () => <MVs videoList={videoList} />;
+export const Template = () => <MVs videoList={mockData.videoList} />;

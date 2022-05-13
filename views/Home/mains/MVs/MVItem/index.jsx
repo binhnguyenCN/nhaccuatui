@@ -1,12 +1,10 @@
 // libs
 import { CustomerServiceOutlined, PlayCircleOutlined } from '@ant-design/icons';
 import classnames from 'classnames';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 // layouts
-import images from '../../../../../constants/images';
 import styles from './styles.module.scss';
 
 const MVItem = ({ mv, index }) => (
@@ -14,11 +12,10 @@ const MVItem = ({ mv, index }) => (
     <div className={styles['mv-thumbnail']}>
       <Link href={mv.thumbnail}>
         <span>
-          <Image
+          <img
             src={mv.thumbnail}
             width={index < 2 ? 410 : 195}
             height={index < 2 ? 230 : 109}
-            blurDataURL={images.blurDataURL}
             alt="topic"
             title={mv.title}
           />

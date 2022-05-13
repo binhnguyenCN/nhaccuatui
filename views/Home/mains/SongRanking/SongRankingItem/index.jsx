@@ -1,20 +1,18 @@
 // libs
-import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 // layouts
-import images from '../../../../../constants/images';
 import styles from './styles.module.scss';
 
 const SongRankingItem = ({ song, index }) => (
   <li className={styles['song-ranking-item']}>
     <div className={styles['song-ranking-thumbnail']}>
       {index === 1 && (
-        <Image
+        <img
           src={song.thumbnail}
           width={100}
           height={100}
-          blurDataURL={images.blurDataURL}
           alt="song ranking"
           title={song.title}
         />
@@ -23,7 +21,13 @@ const SongRankingItem = ({ song, index }) => (
     </div>
     <div className={styles['song-ranking-info']}>
       <div className={styles['song-ranking-title']}>{song.title}</div>
-      <div className={styles['song-ranking-artists']}>{song.title}</div>
+      <div className={styles['song-ranking-artists']}>
+        {song.artists.map((artist, notFirstItem) => (
+          <Link href={artist.imageUrl || '/'} key={artist.artistId}>
+            {notFirstItem ? `, ${artist.name}` : artist.name}
+          </Link>
+        ))}
+      </div>
     </div>
   </li>
 );
