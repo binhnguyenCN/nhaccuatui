@@ -1,5 +1,4 @@
 // libs
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 // others
@@ -11,11 +10,10 @@ const WeeklyArtistItem = ({ artist }) => (
     <div className={styles['weekly-artist-thumbnail']}>
       <Link href={artist.thumbnail}>
         <span>
-          <Image
+          <img
             src={artist.thumbnail}
             width={152}
             height={152}
-            blurDataURL={images.blurDataURL}
             alt={artist.title}
           />
         </span>

@@ -1,24 +1,20 @@
 // libs
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import classnames from 'classnames';
 import { CustomerServiceOutlined, PlayCircleOutlined } from '@ant-design/icons';
 // layouts
 import styles from './styles.module.scss';
-// others
-import images from '../../../../../constants/images';
 
 const NewReleaseItem = ({ song }) => (
   <li className={styles['album-hot-item']}>
     <div className={styles['album-thumbnail']}>
       <Link href={song.thumbnail}>
         <span>
-          <Image
+          <img
             src={song.thumbnail}
             width={152}
             height={152}
-            blurDataURL={images.blurDataURL}
             alt="topic"
             title={song.title}
           />

@@ -9,7 +9,13 @@ const TopicList = ({ topics }) => (
   <ul className={styles['topic-list']}>
     {topics.map((topic, index) => {
       if (index < 5) {
-        return <TopicItem topic={topic} key={topic.key} />;
+        return (
+          <TopicItem
+            coverImageURL={topic.coverImageURL}
+            thumbURL={topic.thumbURL}
+            key={topic.key}
+          />
+        );
       }
       return null;
     })}

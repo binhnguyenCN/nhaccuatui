@@ -1,9 +1,7 @@
 // libs
 import classnames from 'classnames';
-import Image from 'next/image';
 import React from 'react';
 // others
-import images from '../../../../constants/images';
 import styles from './styles.module.scss';
 
 const Slider = ({ banners }) => {
@@ -11,9 +9,8 @@ const Slider = ({ banners }) => {
   return (
     <div className={classnames(styles['slider-wrapper'])}>
       <div className={classnames(styles['slider-inner'])}>
-        <Image
+        <img
           src={banner && banner.thumbnail}
-          blurDataURL={images.blurDataURL}
           alt="banner"
           width={962}
           height={388}

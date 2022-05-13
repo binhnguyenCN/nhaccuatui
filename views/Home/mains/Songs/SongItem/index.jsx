@@ -1,10 +1,8 @@
 // libs
 import { CustomerServiceOutlined } from '@ant-design/icons';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 // others
-import images from '../../../../../constants/images';
 import styles from './styles.module.scss';
 
 const SongItem = ({ song }) => {
@@ -21,11 +19,10 @@ const SongItem = ({ song }) => {
         <div className={styles['song-thumbnail']}>
           <Link href={song.thumbnail}>
             <span>
-              <Image
+              <img
                 src={song.thumbnail}
                 width={60}
                 height={60}
-                blurDataURL={images.blurDataURL}
                 alt={song.title}
               />
             </span>
