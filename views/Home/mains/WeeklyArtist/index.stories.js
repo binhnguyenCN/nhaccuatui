@@ -1,11 +1,13 @@
+// libs
 import React from 'react';
-
+// layouts
 import WeeklyArtist from '.';
-import { topSong } from '../../../../api/mockApi';
+// others
+import mockData from '../../../../api/mockApi';
 
 export default {
   title: 'Pages/Home/main/WeeklyArtist',
   component: WeeklyArtist,
-  parameters: { artists: topSong },
+  parameters: { artists: mockData.topSong },
 };
-export const Template = () => <WeeklyArtist artists={topSong} />;
+export const Template = () => <WeeklyArtist artists={mockData.topSong} />;

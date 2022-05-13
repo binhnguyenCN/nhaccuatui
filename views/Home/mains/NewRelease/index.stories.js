@@ -1,11 +1,11 @@
 import React from 'react';
-import { newSong } from '../../../../api/mockApi';
+import mockData from '../../../../api/mockApi';
 
-import NewRelease from './index';
+import NewRelease from '.';
 
 export default {
   title: 'Pages/Home/main/NewRelease',
   component: NewRelease,
-  parameters: { songs: newSong },
+  parameters: { songs: mockData.newSong },
 };
-export const Template = () => <NewRelease songs={newSong} />;
+export const Template = () => <NewRelease songs={mockData.newSong} />;
