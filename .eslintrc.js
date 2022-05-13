@@ -4,18 +4,26 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'plugin:react/recommended',
+    'next',
     'airbnb',
+    'plugin:react/recommended',
     'plugin:storybook/recommended',
+    'plugin:testing-library/react',
+    'eslint-config-prettier',
+    // 'plugin:react/jsx-runtime',
+    // 'plugin:jest/all',
   ],
+  // parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 8,
     sourceType: 'module',
     ecmaFeatures: {
       modules: true,
+      jsx: true,
+      experimentalObjectRestSpread: true,
     },
   },
-  plugins: ['react', 'eslint-plugin-prettier'],
+  plugins: ['react', 'prettier'],
   rules: {
     'react/jsx-props-no-spreading': 'off',
     'prettier/prettier': ['error'],
@@ -40,5 +48,20 @@ module.exports = {
         caseSensitive: false,
       },
     ],
+    'linebreak-style': 0,
+    'react/react-in-jsx-scope': 'off',
+    '@next/next/no-img-element': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '**/*.stories.*',
+          '**/.storybook/**/*.*',
+          '**/webpack.*.js',
+        ],
+        peerDependencies: true,
+      },
+    ],
+    // 'prefer-destructuring': ['error', { object: false, array: false }],
   },
 };
