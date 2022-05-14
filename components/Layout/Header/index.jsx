@@ -9,6 +9,7 @@ import SearchBar from './components/SearchBar';
 // others
 import images from '../../../constants/images';
 import styles from './styles.module.scss';
+import SelectLang from './components/SelectLangs';
 
 const Header = () => (
   <header className={styles['header-wrapper']}>
@@ -32,6 +33,9 @@ const Header = () => (
       <SearchBar />
       <HeaderUtils />
       <HeaderAuth />
+    </div>
+    <div className={styles['header-inner']}>
+      <SelectLang />
     </div>
   </header>
 );
