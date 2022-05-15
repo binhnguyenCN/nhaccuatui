@@ -1,17 +1,17 @@
 @font-face {
   font-family: NhacCuaTui;
-  src: url('/fonts/NhacCuaTui-Regular.woff');
+  src: url("/fonts/NhacCuaTui-Regular.woff");
 }
 
 @font-face {
   font-family: NhacCuaTui;
-  src: url('/fonts/NhacCuaTui-Medium.woff');
+  src: url("/fonts/NhacCuaTui-Medium.woff");
   font-weight: 500;
 }
 
 @font-face {
   font-family: NhacCuaTui;
-  src: url('/fonts/NhacCuaTui-Bold.woff');
+  src: url("/fonts/NhacCuaTui-Bold.woff");
   font-weight: 700;
 }
 
@@ -19,5 +19,5 @@ $font-size: 1rem;
 $font-weights-regular: 200;
 $font-weights-medium: 500;
 $font-weights-bold: 700;
-$font-family: 'NhacCuaTui', sans-serif;
+$font-family: "NhacCuaTui", sans-serif;
 $line-height: 1;
