@@ -17,7 +17,7 @@ const SongItem = ({ song }) => {
     <li className={styles['song-item']}>
       <div className={styles['song-info']}>
         <div className={styles['song-thumbnail']}>
-          <Link href={song.thumbnail}>
+          <Link href={song.thumbnail} passHref>
             <span>
               <img
                 src={song.thumbnail}
@@ -30,7 +30,7 @@ const SongItem = ({ song }) => {
         </div>
         <div className={styles['song-desc']}>
           <div className={styles['song-title']}>
-            <Link href={song.thumbnail}>
+            <Link href={song.thumbnail} passHref>
               <span title={`${song.title} - ${getArtists(song.artists)}`}>
                 {song.title.substring(0, 20)}
                 {song.title.length > 20 && '...'}

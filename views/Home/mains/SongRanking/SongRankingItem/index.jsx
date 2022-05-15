@@ -1,7 +1,6 @@
 // libs
 import Link from 'next/link';
 import React from 'react';
-
 // layouts
 import styles from './styles.module.scss';
 

@@ -1,13 +1,13 @@
 // libs
 import React from 'react';
 // layouts
-import CategoryTitles from '../../../../data_source/CategoryTitle';
-import RankingOptions from '../../../../data_source/RankingOptions';
 import CategoryTitle from '../../components/CategoryTitle';
 import RankingList from '../../components/RankingList';
 import RankingOption from '../../components/RankingOption';
 import MVRankingItem from './MVRankingItem';
 // others
+import RankingOptions from '@/data_source/RankingOptions';
+import CategoryTitles from '@/data_source/CategoryTitle';
 import styles from './styles.module.scss';
 
 const MVRanking = ({ mvs }) => (

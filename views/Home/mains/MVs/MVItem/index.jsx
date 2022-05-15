@@ -3,14 +3,13 @@ import { CustomerServiceOutlined, PlayCircleOutlined } from '@ant-design/icons';
 import classnames from 'classnames';
 import Link from 'next/link';
 import React from 'react';
-
-// layouts
+// others
 import styles from './styles.module.scss';
 
 const MVItem = ({ mv, index }) => (
   <li key={mv.key} className={styles['mv-item']}>
     <div className={styles['mv-thumbnail']}>
-      <Link href={mv.thumbnail}>
+      <Link href={mv.thumbnail} passHref>
         <span>
           <img
             src={mv.thumbnail}
@@ -31,7 +30,7 @@ const MVItem = ({ mv, index }) => (
       </div>
     </div>
     <div className={styles['mv-info']}>
-      <Link title={mv.title} href={mv.thumbnail}>
+      <Link title={mv.title} href={mv.thumbnail} passHref>
         <span className={styles['mv-title']}>
           {mv.title.substring(0, 20)}
           {mv.title.length > 20 && '...'}

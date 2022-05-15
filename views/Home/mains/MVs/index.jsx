@@ -1,10 +1,10 @@
 // libs
 import React from 'react';
 // layouts
-import CategoryTitles from '../../../../data_source/CategoryTitle';
 import CategoryTitle from '../../components/CategoryTitle';
 import MVList from './MVList';
 // others
+import CategoryTitles from '@/data_source/CategoryTitle';
 import styles from './styles.module.scss';
 
 const MVs = ({ videoList }) => (

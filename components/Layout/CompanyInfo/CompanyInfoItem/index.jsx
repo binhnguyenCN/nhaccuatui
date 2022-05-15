@@ -11,7 +11,7 @@ const CompanyInfoItem = ({ info }) => (
     <ul className={styles['navi-list']}>
       {info.items.map((item) => (
         <li className={styles['navi-item']} key={item.title}>
-          <Link href={item.url}>
+          <Link href={item.url} passHref>
             <span>
               <RightOutlined />
               {item.title}

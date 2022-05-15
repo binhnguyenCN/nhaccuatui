@@ -1,10 +1,10 @@
 // libs
 import React from 'react';
 // layout
-import CategoryTitles from '../../../../data_source/CategoryTitle';
 import CategoryTitle from '../../components/CategoryTitle';
 import TopicList from './components/TopicList';
 // others
+import CategoryTitles from '@/data_source/CategoryTitle';
 import styles from './styles.module.scss';
 
 const HotTopic = ({ topics }) => (

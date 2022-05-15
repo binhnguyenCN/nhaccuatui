@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 const HeaderAuth = () => (
   <div className={styles['header-auth']}>
-    <Link href="/">
+    <Link href="/" passHref>
       <button
         type="button"
         className={`${styles['header-auth_login']} ${styles.btn}`}
@@ -14,7 +14,7 @@ const HeaderAuth = () => (
         Đăng nhập
       </button>
     </Link>
-    <Link href="/">
+    <Link href="/" passHref>
       <button
         type="button"
         className={`${styles['header-auth_signup']} ${styles.btn} ${styles['btn-active']}`}

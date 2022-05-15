@@ -1,5 +1,6 @@
+// libs
 import React from 'react';
-
+// layouts
 import SuggestForU from './index';
 
 export default {

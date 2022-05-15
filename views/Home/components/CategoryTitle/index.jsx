@@ -9,7 +9,7 @@ const CategoryTitle = ({ title }) => {
   const { content, url, icon } = title;
   return (
     <h3 className={styles['category-title']}>
-      <Link href={url}>
+      <Link href={url} passHref>
         <span>
           <span>{content}</span>
           {icon && (

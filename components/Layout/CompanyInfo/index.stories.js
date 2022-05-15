@@ -1,4 +1,6 @@
+// libs
 import React from 'react';
+// layouts
 import CompanyInfo from './index';
 
 export default {

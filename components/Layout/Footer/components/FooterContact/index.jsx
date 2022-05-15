@@ -10,7 +10,7 @@ const FooterContact = ({ contactInfo }) => (
     {contactInfo &&
       contactInfo.map((detail) => (
         <li className={classnames(styles['contact-detail'])} key={detail.title}>
-          <Link href={detail.link}>
+          <Link href={detail.link} passHref>
             <span>
               {detail.icon}
               {detail.content}

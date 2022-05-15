@@ -1,5 +1,6 @@
+// libs
 import React from 'react';
-
+// layouts
 import Footer from './index';
 
 export default {

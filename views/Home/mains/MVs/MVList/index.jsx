@@ -1,8 +1,8 @@
 // libs
 import React from 'react';
-import MVItem from '../MVItem';
-
 // layouts
+import MVItem from '../MVItem';
+// others
 import styles from './styles.module.scss';
 
 const MVList = ({ MVs }) => (

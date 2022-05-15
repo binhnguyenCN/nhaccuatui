@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 const TopicItem = ({ thumbURL, coverImageURL }) => (
   <li className={styles['topic-item']}>
-    <Link href={thumbURL}>
+    <Link href={thumbURL} passHref>
       <span>
         <img src={coverImageURL} width={300} height={100} alt="topic" />
       </span>
