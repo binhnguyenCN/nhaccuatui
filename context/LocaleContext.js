@@ -12,11 +12,11 @@ export const ProvideLocale = ({ children }) => {
 
   const providerLang = useMemo(
     () => ({
-      locale: locale | 'vi',
+      locale,
       setLocale,
       localDataSource: locale ? locales[locale] : locales.vi,
     }),
-    [],
+    [locale, setLocale],
   );
   return (
     <LocaleContext.Provider value={providerLang}>

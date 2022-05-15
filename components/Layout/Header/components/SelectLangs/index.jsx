@@ -19,8 +19,8 @@ const SelectLang = () => {
       <select
         id="langs"
         ref={langRef}
-        defaultValue={locale || 'vi'}
         onChange={handleChangeLang}
+        value={locale}
       >
         {langs.map((option) => (
           <option value={option} key={option}>

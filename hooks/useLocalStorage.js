@@ -3,20 +3,21 @@ import { useEffect, useState } from 'react';
 const useLocalStorage = (key, initialValue) => {
   const [storedValue, setStoredValue] = useState('');
   useEffect(() => {
-    const localValue = localStorage.getItem(key);
-    setStoredValue(localValue || initialValue);
+    const localValue = window.localStorage.getItem(key);
+    setStoredValue(JSON.parse(localValue) || initialValue);
     if (!localValue) {
       localStorage.setItem(key, JSON.stringify(initialValue));
     }
-  }, []);
+  }, [initialValue, key]);
 
   const setValue = (value) => {
-    const newValue = value instanceof Function ? value() : value;
-    setStoredValue(
-      typeof newValue === 'string' ? newValue : JSON.stringify(newValue),
-    );
+    const newValue = value instanceof Function ? value(storedValue) : value;
+    // setStoredValue(
+    //   typeof newValue === 'string' ? newValue : JSON.stringify(newValue),
+    // );
+    setStoredValue(newValue);
     if (typeof window !== 'undefined') {
-      localStorage.setItem(key, JSON.stringify(newValue));
+      window.localStorage.setItem(key, JSON.stringify(newValue));
     }
   };
   return [storedValue, setValue];
