@@ -1,7 +1,9 @@
+// libs
 import React from 'react';
-import mockData from '../../../../api/mockApi';
-
+// layouts
 import SongRanking from './index';
+// others
+import mockData from '../../../../api/mockApi';
 
 export default {
   title: 'Pages/Home/main/SongRanking',

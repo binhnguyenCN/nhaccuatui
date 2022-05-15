@@ -3,7 +3,7 @@ import React from 'react';
 // layouts
 import Home from './index';
 // others
-import mockData from '../../api/mockApi';
+import mockData from '@/api/mockApi';
 
 export default {
   title: 'Pages/HomePage',

@@ -1,7 +1,9 @@
+// libs
 import React from 'react';
-
+// layouts
 import TopSong from '.';
-import mockData from '../../../../api/mockApi';
+// others
+import mockData from '@/api/mockApi';
 
 export default {
   title: 'Pages/Home/main/TopSong',

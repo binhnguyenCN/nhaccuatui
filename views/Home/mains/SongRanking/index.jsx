@@ -1,16 +1,14 @@
 // libs
 import React from 'react';
-
 // layouts
-import CategoryTitles from '../../../../data_source/CategoryTitle';
-import RankingOptions from '../../../../data_source/RankingOptions';
 import CategoryTitle from '../../components/CategoryTitle';
 import RankingList from '../../components/RankingList';
 import RankingOption from '../../components/RankingOption';
 import SongRankingItem from './SongRankingItem';
-
 // others
 import styles from './styles.module.scss';
+import CategoryTitles from '@/data_source/CategoryTitle';
+import RankingOptions from '@/data_source/RankingOptions';
 
 const SongRanking = ({ songs }) => (
   <div className={styles['song-ranking-wrapper']}>

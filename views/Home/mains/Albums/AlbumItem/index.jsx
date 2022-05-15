@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 const AlbumItem = ({ title, thumbnail }) => (
   <li className={styles['album-item']}>
-    <Link href={thumbnail}>
+    <Link href={thumbnail} passHref>
       <span>
         <img
           src={thumbnail}
@@ -17,7 +17,7 @@ const AlbumItem = ({ title, thumbnail }) => (
         />
       </span>
     </Link>
-    <Link href={thumbnail}>
+    <Link href={thumbnail} passHref>
       <span className={styles['album-title']} title={title}>
         {title.substring(0, 20)}
         {title.length > 40 && '...'}

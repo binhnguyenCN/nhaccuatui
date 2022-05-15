@@ -1,9 +1,9 @@
 // libs
 import React from 'react';
 // layouts
-import HeaderData from '../../../../../data_source/Header';
 import HeaderMenuItem from '../HeaderMenuItem';
 // others
+import HeaderData from '@/data_source/Header';
 import styles from './styles.module.scss';
 
 const HeaderMenu = () => (

@@ -2,7 +2,7 @@
 import React from 'react';
 
 // others
-import images from '../../../../../constants/images';
+import images from '@/constants/images';
 import styles from './styles.module.scss';
 
 const HeaderUtils = () => (

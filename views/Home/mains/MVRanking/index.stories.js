@@ -1,5 +1,5 @@
 import React from 'react';
-import mockData from '../../../../api/mockApi';
+import mockData from '@/api/mockApi';
 
 import MVRanking from './index';
 

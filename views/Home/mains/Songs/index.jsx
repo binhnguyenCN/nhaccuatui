@@ -1,11 +1,11 @@
 // libs
 import React from 'react';
 // layouts
-import CategoryTitles from '../../../../data_source/CategoryTitle';
 import CategoryTitle from '../../components/CategoryTitle';
 import SongList from './SongList';
 // others
 import styles from './styles.module.scss';
+import CategoryTitles from '@/data_source/CategoryTitle';
 
 const Songs = ({ songs }) => (
   <div className={styles['songs-wrapper']}>

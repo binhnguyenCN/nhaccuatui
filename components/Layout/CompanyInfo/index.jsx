@@ -1,11 +1,11 @@
 // libs
 import Link from 'next/link';
 import React from 'react';
-
 // layouts
-import images from '../../../constants/images';
 import CompanyInfoData from '../../../data_source/CompanyInfo';
 import CompanyInfoItem from './CompanyInfoItem';
+// others
+import images from '@/constants/images';
 import styles from './styles.module.scss';
 
 const CompanyInfo = () => (
@@ -17,7 +17,7 @@ const CompanyInfo = () => (
         ))}
       </ul>
       <div className={styles['company-info']}>
-        <Link href="/">
+        <Link href="/" passHref>
           <span className={styles['info-logo']}>
             <img
               src={images.logoCompany}
@@ -42,12 +42,12 @@ const CompanyInfo = () => (
             ))}
           </ul>
         </div>
-        <Link href="/">
+        <Link href="/" passHref>
           <span className={styles['info-bct']}>
             <img src={images.bct} alt="nhaccuatui" width={120} height={45} />
           </span>
         </Link>
-        <Link href="/">
+        <Link href="/" passHref>
           <span className={styles['info-dmca']}>
             <img src={images.dmca} alt="nhaccuatui" width={120} height={60} />
           </span>
