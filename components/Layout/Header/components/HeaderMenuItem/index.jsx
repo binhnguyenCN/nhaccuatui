@@ -7,10 +7,11 @@ import DropdownMenu from '../DropdownMenu';
 import styles from './styles.module.scss';
 
 const HeaderMenuItem = (props) => {
-  const { menuItem } = props;
+  const { menuItem, title } = props;
+
   return (
     <li className={styles['header-item']}>
-      <Link href="/">{menuItem.title}</Link>
+      <Link href="/">{title}</Link>
       <DropdownMenu
         dropdownMenu={menuItem.subMenu}
         style={styles['header-submenu']}
