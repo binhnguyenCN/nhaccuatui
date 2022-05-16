@@ -1,5 +1,6 @@
 // libs
 import * as NextImage from 'next/image';
+import { ProvideLocale } from '@/context/LocaleContext';
 // others
 import '../styles/globals.scss';
 
@@ -24,3 +25,11 @@ export const parameters = {
     },
   },
 };
+
+export const decorators = [
+  (Story) => (
+    <ProvideLocale>
+      <Story />
+    </ProvideLocale>
+  ),
+];

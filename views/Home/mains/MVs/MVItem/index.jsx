@@ -6,17 +6,17 @@ import React from 'react';
 // others
 import styles from './styles.module.scss';
 
-const MVItem = ({ mv, index }) => (
-  <li key={mv.key} className={styles['mv-item']}>
+const MVItem = ({ thumbnail, title, duration, artists, index }) => (
+  <li className={styles['mv-item']}>
     <div className={styles['mv-thumbnail']}>
-      <Link href={mv.thumbnail} passHref>
+      <Link href={thumbnail} passHref>
         <span>
           <img
-            src={mv.thumbnail}
+            src={thumbnail}
             width={index < 2 ? 410 : 195}
             height={index < 2 ? 230 : 109}
             alt="topic"
-            title={mv.title}
+            title={title}
           />
         </span>
       </Link>
@@ -26,18 +26,18 @@ const MVItem = ({ mv, index }) => (
       </div>
       <div className={classnames(styles['thumbnail-durations'])}>
         <CustomerServiceOutlined />
-        <span>{mv.duration}</span>
+        <span>{duration}</span>
       </div>
     </div>
     <div className={styles['mv-info']}>
-      <Link title={mv.title} href={mv.thumbnail} passHref>
+      <Link title={title} href={thumbnail} passHref>
         <span className={styles['mv-title']}>
-          {mv.title.substring(0, 20)}
-          {mv.title.length > 20 && '...'}
+          {title.substring(0, 20)}
+          {title.length > 20 && '...'}
         </span>
       </Link>
       <span className={styles['artist-list']}>
-        {mv.artists.map((artist, isFirstItem) => (
+        {artists.map((artist, isFirstItem) => (
           <Link href={artist.imageUrl || '/'} key={artist.artistId}>
             {!isFirstItem ? artist.name : `, ${artist.name}`}
           </Link>

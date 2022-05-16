@@ -19,7 +19,15 @@ const MVRanking = ({ mvs }) => (
         {mvs &&
           mvs.map((mv, index) => {
             if (index < 5) {
-              return <MVRankingItem mv={mv} index={index + 1} key={mv.key} />;
+              return (
+                <MVRankingItem
+                  title={mv.title}
+                  thumbnail={mv.thumbnail}
+                  artists={mv.artists}
+                  index={index + 1}
+                  key={mv.key}
+                />
+              );
             }
             return null;
           })}

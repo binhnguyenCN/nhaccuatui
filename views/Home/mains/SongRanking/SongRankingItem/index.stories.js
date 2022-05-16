@@ -1,11 +1,11 @@
 // libs
 import React from 'react';
 // layouts
-import MVRankingItem from '.';
+import SongRankingItem from '.';
 
 export default {
-  title: 'Pages/Home/main/MVRanking/MVRankingItem',
-  component: MVRankingItem,
+  title: 'Pages/Home/main/SongRanking/SongRankingItem',
+  component: SongRankingItem,
   argTypes: {
     Index: { type: 'number', defaultValue: 1 },
     Thumbnail: {
@@ -18,7 +18,7 @@ export default {
 };
 
 const Template = ({ Thumbnail, Title, Artists, Index }) => (
-  <MVRankingItem
+  <SongRankingItem
     thumbnail={Thumbnail}
     title={Title}
     artists={Artists}
@@ -28,17 +28,24 @@ const Template = ({ Thumbnail, Title, Artists, Index }) => (
 
 export const PrimaryItem = Template.bind({});
 PrimaryItem.args = {
-  Title: 'Có Em Là Đủ',
+  Title: 'Bởi Vì Anh Là Nắng',
   Thumbnail:
-    'https://avatar-ex-swe.nixcdn.com/mv/2022/04/15/9/4/a/6/1650017639222_640.jpg',
+    'https://avatar-ex-swe.nixcdn.com/song/2022/04/12/3/e/6/4/1649748534347_300.jpg',
+
   Artists: [
     {
-      artistId: 97303,
-      name: 'Will',
-      shortLink: 'will-365',
-      imageUrl:
-        'https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/12/14/b/1/0/7/1513223438750_300.jpg',
+      artistId: 42999,
+      name: 'Mỹ Duyên',
+      shortLink: null,
+      imageUrl: null,
+    },
+    {
+      artistId: 379528,
+      name: 'lenguyenhuukhanh',
+      shortLink: null,
+      imageUrl: null,
     },
   ],
+
   Index: 1,
 };

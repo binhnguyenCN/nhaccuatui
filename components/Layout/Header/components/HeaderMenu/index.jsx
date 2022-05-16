@@ -1,10 +1,10 @@
 // libs
 import React from 'react';
-import { useLocale } from '../../../../../context/LocaleContext';
 // layouts
 import HeaderMenuItem from '../HeaderMenuItem';
 // others
 import HeaderData from '@/data_source/Header';
+import { useLocale } from '@/context/LocaleContext';
 import styles from './styles.module.scss';
 
 const HeaderMenu = () => {
@@ -16,7 +16,9 @@ const HeaderMenu = () => {
         <HeaderMenuItem
           menuItem={menuItem}
           key={menuItem.title}
-          title={localDataSource.header.menuList[index].title}
+          title={
+            localDataSource && localDataSource.header.menuList[index].title
+          }
         />
       ))}
     </ul>
