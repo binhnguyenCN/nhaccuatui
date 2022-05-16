@@ -7,11 +7,11 @@ import AlbumItem from './AlbumItem';
 // others
 import styles from './styles.module.scss';
 // hooks
-import useLocalStorage from '@/hooks/useLocalStorage';
+import { useLocale } from '@/context/LocaleContext';
 
 const Albums = ({ albums }) => {
   const { groupName, listPlaylist } = albums;
-  const [locale] = useLocalStorage();
+  const { locale } = useLocale();
 
   const getTitle = (title, lang = 'vi') => {
     const index = title.indexOf('_');
@@ -25,7 +25,7 @@ const Albums = ({ albums }) => {
       <div className={styles['albums-inner']}>
         <CategoryTitle
           title={{
-            content: locale ? getTitle(groupName, locale) : getTitle(groupName),
+            content: getTitle(groupName, locale),
             url: '/',
             icon: null,
           }}
