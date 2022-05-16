@@ -7,6 +7,7 @@ import styles from './styles.module.scss';
 
 const CategoryTitle = ({ title }) => {
   const { content, url, icon } = title;
+
   return (
     <h3 className={styles['category-title']}>
       <Link href={url} passHref>

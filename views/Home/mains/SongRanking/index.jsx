@@ -18,7 +18,13 @@ const SongRanking = ({ songs }) => (
       <RankingList>
         {songs &&
           songs.map((song, index) => (
-            <SongRankingItem song={song} index={index + 1} key={song.songKey} />
+            <SongRankingItem
+              thumbnail={song.thumbnail}
+              title={song.title}
+              artists={song.artists}
+              index={index + 1}
+              key={song.songKey}
+            />
           ))}
       </RankingList>
     </div>

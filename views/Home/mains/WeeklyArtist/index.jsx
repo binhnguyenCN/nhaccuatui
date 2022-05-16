@@ -15,7 +15,13 @@ const WeeklyArtist = ({ artists }) => (
       <CategoryList>
         {artists.map((artist, index) => {
           if (index < 5) {
-            return <WeeklyArtistItem artist={artist} key={artist.key} />;
+            return (
+              <WeeklyArtistItem
+                title={artist.title}
+                thumbnail={artist.thumbnail}
+                key={artist.key}
+              />
+            );
           }
           return null;
         })}

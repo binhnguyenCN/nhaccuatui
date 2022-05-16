@@ -6,7 +6,6 @@ import CategoryTitle from '../../components/CategoryTitle';
 import AlbumItem from './AlbumItem';
 // others
 import styles from './styles.module.scss';
-// hooks
 import { useLocale } from '@/context/LocaleContext';
 
 const Albums = ({ albums }) => {
@@ -20,6 +19,7 @@ const Albums = ({ albums }) => {
     }
     return title.slice(index + 1, -1);
   };
+
   return (
     <div className={styles['albums-wrapper']}>
       <div className={styles['albums-inner']}>

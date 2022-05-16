@@ -5,46 +5,39 @@ import React from 'react';
 // others
 import styles from './styles.module.scss';
 
-const SongItem = ({ song }) => {
-  const getArtists = (artists) => {
-    const artistList = [];
-    artists.forEach((artist) => {
-      artistList.push(artist.name);
+const SongItem = ({ thumbnail, title, duration, artists }) => {
+  const getArtists = (artistList) => {
+    const result = [];
+    artistList.forEach((artist) => {
+      result.push(artist.name);
     });
-    return artistList.join(', ');
+    return result.join(', ');
   };
   return (
     <li className={styles['song-item']}>
       <div className={styles['song-info']}>
         <div className={styles['song-thumbnail']}>
-          <Link href={song.thumbnail} passHref>
+          <Link href={thumbnail} passHref>
             <span>
-              <img
-                src={song.thumbnail}
-                width={60}
-                height={60}
-                alt={song.title}
-              />
+              <img src={thumbnail} width={60} height={60} alt={title} />
             </span>
           </Link>
         </div>
         <div className={styles['song-desc']}>
           <div className={styles['song-title']}>
-            <Link href={song.thumbnail} passHref>
-              <span title={`${song.title} - ${getArtists(song.artists)}`}>
-                {song.title.substring(0, 20)}
-                {song.title.length > 20 && '...'}
+            <Link href={thumbnail} passHref>
+              <span title={`${title} - ${getArtists(artists)}`}>
+                {title.substring(0, 20)}
+                {title.length > 20 && '...'}
               </span>
             </Link>
           </div>
-          <div className={styles['song-artists']}>
-            {getArtists(song.artists)}
-          </div>
+          <div className={styles['song-artists']}>{getArtists(artists)}</div>
         </div>
       </div>
       <div className={styles['song-views']}>
         <CustomerServiceOutlined />
-        <span>{song.duration}</span>
+        <span>{duration}</span>
       </div>
     </li>
   );

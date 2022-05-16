@@ -82,7 +82,13 @@ const NewRelease = ({ songs }) => {
               pagination.page * pagination.limit,
             )
             .map((song) => (
-              <NewReleaseItem song={song} key={song.key} />
+              <NewReleaseItem
+                thumbnail={song.thumbnail}
+                title={song.title}
+                artists={song.artists}
+                duration={song.duration}
+                key={song.key}
+              />
             ))}
         </CategoryList>
       </div>
