@@ -6,9 +6,13 @@ import CategoryTitle from '../../components/CategoryTitle';
 import AlbumItem from './AlbumItem';
 // others
 import styles from './styles.module.scss';
+// hooks
+import useLocalStorage from '@/hooks/useLocalStorage';
 
 const Albums = ({ albums }) => {
   const { groupName, listPlaylist } = albums;
+  const [locale] = useLocalStorage();
+
   const getTitle = (title, lang = 'vi') => {
     const index = title.indexOf('_');
     if (lang === 'vi') {
@@ -20,7 +24,11 @@ const Albums = ({ albums }) => {
     <div className={styles['albums-wrapper']}>
       <div className={styles['albums-inner']}>
         <CategoryTitle
-          title={{ content: getTitle(groupName), url: '/', icon: null }}
+          title={{
+            content: locale ? getTitle(groupName, locale) : getTitle(groupName),
+            url: '/',
+            icon: null,
+          }}
         />
         <CategoryList>
           {listPlaylist.map((playlist, index) => {
