@@ -4,17 +4,9 @@ import { render, screen } from '@testing-library/react';
 import Footer from './index';
 
 describe('Footer', () => {
-  it('renders a heading', () => {
+  it('renders a footer', () => {
     render(<Footer />);
-
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
-    });
-
-    expect(heading).toBeInTheDocument();
-  });
-  it('renders homepage unchanged', () => {
-    const { container } = render(<Home />);
-    expect(container).toMatchSnapshot();
+    const email = screen.getByText(/support@nct.vn/i);
+    expect(email).toBeInTheDocument();
   });
 });
