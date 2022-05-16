@@ -59,6 +59,10 @@ module.exports = {
     'jest/no-identical-title': 'error',
     'jest/prefer-to-have-length': 'warn',
     'jest/valid-expect': 'error',
+    'jest/prefer-expect-assertions': [
+      'warn',
+      { onlyFunctionsWithAsyncKeyword: true },
+    ],
     'eol-last': 1,
     'operator-linebreak': [2, 'after'],
     'no-bitwise': [2, { allow: ['&', '|', '>>', '<<'] }],
