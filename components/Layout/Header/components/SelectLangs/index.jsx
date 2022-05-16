@@ -1,8 +1,7 @@
 // libs
 import React, { useRef } from 'react';
-
 // others
-import { useLocale } from '../../../../../context/LocaleContext';
+import { useLocale } from '@/context/LocaleContext';
 import styles from './styles.module.scss';
 
 const SelectLang = () => {

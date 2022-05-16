@@ -14,12 +14,12 @@ import SelectLang from './components/SelectLangs';
 const Header = () => (
   <header className={styles['header-wrapper']}>
     <div className={styles['header-inner']}>
-      <Link href="/">
+      <Link href="/" passHref>
         <span className={styles['header-logo']}>
           <img src={images.logoIcon} alt="nhaccuatui" width={64} height={40} />
         </span>
       </Link>
-      <Link href="/">
+      <Link href="/" passHref>
         <span className={styles['header-beta-version']}>
           <img
             src={images.newVersion}
