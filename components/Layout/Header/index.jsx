@@ -6,37 +6,45 @@ import HeaderAuth from './components/HeaderAuth';
 import HeaderMenu from './components/HeaderMenu';
 import HeaderUtils from './components/HeaderUtils';
 import SearchBar from './components/SearchBar';
-// others
-import images from '../../../constants/images';
-import styles from './styles.module.scss';
 import SelectLang from './components/SelectLangs';
+// others
+import images from '@/constants/images';
+import { ProvideLocale } from '@/context/LocaleContext';
+import styles from './styles.module.scss';
 
 const Header = () => (
-  <header className={styles['header-wrapper']}>
-    <div className={styles['header-inner']}>
-      <Link href="/" passHref>
-        <span className={styles['header-logo']}>
-          <img src={images.logoIcon} alt="nhaccuatui" width={64} height={40} />
-        </span>
-      </Link>
-      <Link href="/" passHref>
-        <span className={styles['header-beta-version']}>
-          <img
-            src={images.newVersion}
-            alt="nhaccuatui"
-            width={96}
-            height={37}
-          />
-        </span>
-      </Link>
-      <HeaderMenu />
-      <SearchBar />
-      <HeaderUtils />
-      <HeaderAuth />
-    </div>
-    <div className={styles['header-inner']}>
-      <SelectLang />
-    </div>
-  </header>
+  <ProvideLocale>
+    <header className={styles['header-wrapper']}>
+      <div className={styles['header-inner']}>
+        <Link href="/" passHref>
+          <span className={styles['header-logo']}>
+            <img
+              src={images.logoIcon}
+              alt="nhaccuatui icon"
+              width={64}
+              height={40}
+            />
+          </span>
+        </Link>
+        <Link href="/" passHref>
+          <span className={styles['header-beta-version']}>
+            <img
+              src={images.newVersion}
+              alt="nhaccuatui beta"
+              width={96}
+              height={37}
+            />
+          </span>
+        </Link>
+        <HeaderMenu />
+        <SearchBar />
+        <HeaderUtils />
+        <HeaderAuth />
+      </div>
+      <div className={styles['header-inner']}>
+        <SelectLang />
+      </div>
+    </header>
+  </ProvideLocale>
 );
 export default Header;
