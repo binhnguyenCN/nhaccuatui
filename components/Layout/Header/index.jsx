@@ -26,7 +26,7 @@ const Header = () => (
             />
           </span>
         </Link>
-        <Link href="/" passHref>
+        <Link href="/about" passHref>
           <span className={styles['header-beta-version']}>
             <img
               src={images.newVersion}
