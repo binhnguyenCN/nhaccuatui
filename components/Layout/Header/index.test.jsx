@@ -3,7 +3,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 // layouts
 import Header from './index';
 
-describe('Header', () => {
+describe('header', () => {
   it('renders a header', () => {
     render(<Header />);
     const logo = screen.getByAltText('nhaccuatui icon');
