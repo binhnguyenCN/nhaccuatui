@@ -18,11 +18,11 @@ const Header = () => (
       <div className={styles['header-inner']}>
         <Link href="/" passHref>
           <span className={styles['header-logo']}>
-            <img 
-              src={images.logoIcon} 
-              alt="nhaccuatui" 
-              width={64} 
-              height={40} 
+            <img
+              src={images.logoIcon}
+              alt="nhaccuatui"
+              width={64}
+              height={40}
             />
           </span>
         </Link>
