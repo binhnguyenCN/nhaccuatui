@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 
 * {
   box-sizing: border-box;
@@ -20,8 +20,10 @@ body {
   text-rendering: optimizespeed;
 }
 
-ul {
+ul,
+li {
   list-style-type: none;
+  padding: 0;
 }
 
 a {

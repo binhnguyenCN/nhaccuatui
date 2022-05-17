@@ -1,9 +1,9 @@
 .header-item {
   position: relative;
-  top: 12px;
   height: 100%;
   cursor: pointer;
   font-size: 14px;
+  line-height: 40px;
 
   > a:hover {
     color: $text-active;

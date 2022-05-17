@@ -15,7 +15,13 @@ const TopSong = ({ songs }) => (
       <CategoryList>
         {songs.map((song, index) => {
           if (index < 5) {
-            return <TopSongItem song={song} key={song.key} />;
+            return (
+              <TopSongItem
+                title={song.title}
+                thumbnail={song.thumbnail}
+                key={song.key}
+              />
+            );
           }
           return null;
         })}

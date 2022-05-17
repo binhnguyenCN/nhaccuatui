@@ -1,13 +1,13 @@
 .header-submenu {
   position: absolute;
   z-index: 1;
-  top: 38px;
-  left: 0;
+  top: 42px;
+  left: -15px;
   display: none;
   justify-content: space-around;
   align-items: center;
   box-shadow: 0 3px 8px rgb(3 3 3 / 26%);
   width: 550px;
-  padding: 30px;
+  padding: 30px 10px;
   background-color: $text-light;
 }

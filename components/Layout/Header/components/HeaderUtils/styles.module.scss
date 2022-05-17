@@ -1,9 +1,9 @@
 .header-util {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   :first-child {
-    margin-right: 16px;
+    margin-right: 10px;
   }
 }

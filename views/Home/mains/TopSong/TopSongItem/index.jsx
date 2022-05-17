@@ -4,12 +4,12 @@ import React from 'react';
 // others
 import styles from './styles.module.scss';
 
-const TopSongItem = ({ song }) => (
-  <li className={styles['top-song-item']} title={song.title}>
+const TopSongItem = ({ title, thumbnail }) => (
+  <li className={styles['top-song-item']} title={title}>
     <div className={styles['top-song-thumbnail']}>
-      <Link href={song.thumbnail} passHref>
+      <Link href={thumbnail} passHref>
         <span>
-          <img src={song.thumbnail} width={152} height={152} alt={song.title} />
+          <img src={thumbnail} width={152} height={152} alt={title} />
         </span>
       </Link>
     </div>

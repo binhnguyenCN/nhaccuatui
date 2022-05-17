@@ -18,19 +18,14 @@ const Header = () => (
       <div className={styles['header-inner']}>
         <Link href="/" passHref>
           <span className={styles['header-logo']}>
-            <img
-              src={images.logoIcon}
-              alt="nhaccuatui icon"
-              width={64}
-              height={40}
-            />
+            <img src={images.logoIcon} alt="nhaccuatui" width={64} height={40} />
           </span>
         </Link>
         <Link href="/about" passHref>
           <span className={styles['header-beta-version']}>
             <img
               src={images.newVersion}
-              alt="nhaccuatui beta"
+              alt="nhaccuatui"
               width={96}
               height={37}
             />
@@ -39,10 +34,8 @@ const Header = () => (
         <HeaderMenu />
         <SearchBar />
         <HeaderUtils />
-        <HeaderAuth />
-      </div>
-      <div className={styles['header-inner']}>
         <SelectLang />
+        <HeaderAuth />
       </div>
     </header>
   </ProvideLocale>

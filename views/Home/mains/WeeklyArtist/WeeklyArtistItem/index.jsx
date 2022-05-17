@@ -4,17 +4,12 @@ import React from 'react';
 // others
 import styles from './styles.module.scss';
 
-const WeeklyArtistItem = ({ artist }) => (
-  <li className={styles['weekly-artist-item']} title={artist.title}>
+const WeeklyArtistItem = ({ title, thumbnail }) => (
+  <li className={styles['weekly-artist-item']} title={title}>
     <div className={styles['weekly-artist-thumbnail']}>
-      <Link href={artist.thumbnail} passHref>
+      <Link href={thumbnail} passHref>
         <span>
-          <img
-            src={artist.thumbnail}
-            width={152}
-            height={152}
-            alt={artist.title}
-          />
+          <img src={thumbnail} width={152} height={152} alt={title} />
         </span>
       </Link>
       <div className={styles['thumbnail-dark-layer']} />

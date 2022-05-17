@@ -6,17 +6,17 @@ import { CustomerServiceOutlined, PlayCircleOutlined } from '@ant-design/icons';
 // others
 import styles from './styles.module.scss';
 
-const NewReleaseItem = ({ song }) => (
+const NewReleaseItem = ({ thumbnail, title, artists, duration }) => (
   <li className={styles['album-hot-item']}>
     <div className={styles['album-thumbnail']}>
-      <Link href={song.thumbnail} passHref>
+      <Link href={thumbnail} passHref>
         <span>
           <img
-            src={song.thumbnail}
+            src={thumbnail}
             width={152}
             height={152}
             alt="topic"
-            title={song.title}
+            title={title}
           />
         </span>
       </Link>
@@ -26,15 +26,15 @@ const NewReleaseItem = ({ song }) => (
       </div>
       <div className={classnames(styles['thumbnail-durations'])}>
         <CustomerServiceOutlined />
-        <span>{song.duration}</span>
+        <span>{duration}</span>
       </div>
     </div>
     <div className={styles['album-info']}>
-      <Link href={song.thumbnail} passHref>
-        <span className={styles['album-title']}>{song.title}</span>
+      <Link href={thumbnail} passHref>
+        <span className={styles['album-title']}>{title}</span>
       </Link>
       <span className={styles['artist-list']}>
-        {song.artists.map((artist, notFirstItem) => (
+        {artists.map((artist, notFirstItem) => (
           <Link href={artist.imageUrl || '/'} key={artist.artistId}>
             {notFirstItem ? `, ${artist.name}` : artist.name}
           </Link>
