@@ -16,13 +16,15 @@ const SelectLang = () => {
   return (
     <div className={styles['select-lang-wrapper']}>
       <select
+        placeholder="Choose language"
         id="langs"
+        data-testid="select"
         ref={langRef}
         onChange={handleChangeLang}
         value={locale}
       >
         {langs.map((option) => (
-          <option value={option} key={option}>
+          <option value={option} key={option} data-testid="select-option">
             {localDataSource[option]}
           </option>
         ))}

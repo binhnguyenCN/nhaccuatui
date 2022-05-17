@@ -9,6 +9,9 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
     prependData: '@import "App.scss";',
   },
+  future: {
+    webpack5: true,
+  },
   images: {
     domains: [
       'avatar-ex-swe.nixcdn.com',
