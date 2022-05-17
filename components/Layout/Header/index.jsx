@@ -32,10 +32,8 @@ const Header = () => (
       <HeaderMenu />
       <SearchBar />
       <HeaderUtils />
-      <HeaderAuth />
-    </div>
-    <div className={styles['header-inner']}>
       <SelectLang />
+      <HeaderAuth />
     </div>
   </header>
 );
