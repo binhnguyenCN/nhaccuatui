@@ -20,7 +20,7 @@ const Header = () => (
           <span className={styles['header-logo']}>
             <img
               src={images.logoIcon}
-              alt="nhaccuatui"
+              alt="nhaccuatui icon"
               width={64}
               height={40}
             />
@@ -30,7 +30,7 @@ const Header = () => (
           <span className={styles['header-beta-version']}>
             <img
               src={images.newVersion}
-              alt="nhaccuatui"
+              alt="nhaccuatui beta"
               width={96}
               height={37}
             />

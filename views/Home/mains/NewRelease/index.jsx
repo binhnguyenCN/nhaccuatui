@@ -8,6 +8,7 @@ import NewReleaseItem from './NewReleaseItem';
 // others
 import CategoryTitles from '@/data_source/CategoryTitle';
 import styles from './styles.module.scss';
+import keyCode from '@/constants/keyCode';
 
 const NewRelease = ({ songs }) => {
   const [pagination, setPagination] = useState({
@@ -48,12 +49,11 @@ const NewRelease = ({ songs }) => {
   useEffect(() => {
     const handleKeyDown = (event) => {
       const { page } = pagination;
-      // ? keyCode: up(33) down(34)
-      if (event.keyCode === 33) {
+      if (event.keyCode === keyCode.KEY_PAGE_UP) {
         event.preventDefault();
         handleChangePage(page - 1);
       }
-      if (event.keyCode === 34) {
+      if (event.keyCode === keyCode.KEY_PAGE_DOWN) {
         event.preventDefault();
         handleChangePage(page + 1);
       }
