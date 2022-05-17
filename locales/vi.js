@@ -15,7 +15,7 @@ const vi = {
       { title: <DashOutlined /> },
     ],
   },
-  vi: 'Tiếng Việt',
-  en: 'Tiếng Anh',
+  vi: 'VI',
+  en: 'EN',
 };
 export default vi;
