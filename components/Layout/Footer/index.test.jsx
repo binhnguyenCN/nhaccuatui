@@ -2,11 +2,32 @@
 import { render, screen } from '@testing-library/react';
 // layouts
 import Footer from './index';
+// others
+import FooterData from '@/data_source/Footer';
 
-describe('footer', () => {
-  it('renders a footer', () => {
+describe('render a footer', () => {
+  it('should include email', () => {
     render(<Footer />);
-    const email = screen.getByText(/support@nct.vn/i);
-    expect(email).toBeInTheDocument();
+    // arrange
+    const indexEmail = FooterData.contact.findIndex(
+      (item) => item.title === 'email',
+    );
+    const emailValue = FooterData.contact[indexEmail].content;
+    // act
+    const emailEle = screen.getByText(emailValue);
+    // assert
+    expect(emailEle).toBeInTheDocument();
+  });
+  it('should include phone', () => {
+    render(<Footer />);
+    // arrange
+    const indexPhone = FooterData.contact.findIndex(
+      (item) => item.title === 'phone',
+    );
+    const phoneValue = FooterData.contact[indexPhone].content;
+    // act
+    const phoneEle = screen.getByText(phoneValue);
+    // assert
+    expect(phoneEle).toBeInTheDocument();
   });
 });

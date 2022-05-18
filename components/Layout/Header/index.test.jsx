@@ -1,26 +1,59 @@
 // libs
 import { render, screen, fireEvent } from '@testing-library/react';
 // layouts
-import Header from './index';
+import Header from '.';
+// others
+import TestProvider from '@/utils/TestProvider.jsx';
 
-describe('header', () => {
-  it('renders a header', () => {
-    render(<Header />);
-    const logo = screen.getByAltText('nhaccuatui icon');
+describe('renders a header', () => {
+  it('should include logo', () => {
+    render(
+      <TestProvider>
+        <Header />
+      </TestProvider>,
+    );
+    // arrange
+    const logoAlt = 'nhaccuatui icon';
+    // act
+    const logo = screen.getByAltText(logoAlt);
+    // assert
     expect(logo).toBeInTheDocument();
   });
-  it('checks vietnamese', () => {
-    render(<Header />);
-    const selectLang = screen.getByPlaceholderText('Choose language');
-    fireEvent.change(selectLang, { target: { value: 'vi' } });
-    const songs = screen.getByText('Bài hát');
-    expect(songs).toBeInTheDocument();
+});
+
+describe('check multi linguistic', () => {
+  it('should vietnamese songs', () => {
+    render(
+      <TestProvider>
+        <Header />
+      </TestProvider>,
+    );
+    // arrange
+    const placeholder = 'Choose language';
+    const songVietnamese = 'Bài hát';
+    const shortCutVietnamese = 'vi';
+    // act
+    const selectLang = screen.getByPlaceholderText(placeholder);
+    fireEvent.change(selectLang, { target: { value: shortCutVietnamese } });
+    const songsEle = screen.getByText(songVietnamese);
+    // assert
+    expect(songsEle).toBeInTheDocument();
   });
-  it('checks english', () => {
-    render(<Header />);
-    const selectLang = screen.getByTestId('select');
-    fireEvent.change(selectLang, { target: { value: 'en' } });
-    const songs = screen.getByText('Songs');
-    expect(songs).toBeInTheDocument();
+  it('should english songs', () => {
+    render(
+      <TestProvider>
+        <Header />
+      </TestProvider>,
+    );
+    // arrange
+    const testId = 'select';
+    const songEnglish = 'Songs';
+    const shortCutEnglish = 'en';
+    // act
+    const selectLang = screen.getByTestId(testId);
+    fireEvent.change(selectLang, { target: { value: shortCutEnglish } });
+    const songsEle = screen.getByText(songEnglish);
+    // assert
+    expect(songsEle).toBeInTheDocument();
   });
 });
