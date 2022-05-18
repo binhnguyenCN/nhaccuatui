@@ -4,6 +4,8 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import Header from '.';
 // others
 import TestProvider from '@/utils/TestProvider.jsx';
+import vi from '@/locales/vi';
+import en from '@/locales/en';
 
 describe('renders a header', () => {
   it('should include logo', () => {
@@ -30,7 +32,7 @@ describe('check multi linguistic', () => {
     );
     // arrange
     const placeholder = 'Choose language';
-    const songVietnamese = 'Bài hát';
+    const songVietnamese = vi.header.menuList[0].title;
     const shortCutVietnamese = 'vi';
     // act
     const selectLang = screen.getByPlaceholderText(placeholder);
@@ -47,7 +49,7 @@ describe('check multi linguistic', () => {
     );
     // arrange
     const testId = 'select';
-    const songEnglish = 'Songs';
+    const songEnglish = en.header.menuList[0].title;
     const shortCutEnglish = 'en';
     // act
     const selectLang = screen.getByTestId(testId);
