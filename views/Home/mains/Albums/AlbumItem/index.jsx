@@ -5,7 +5,7 @@ import React from 'react';
 import styles from './styles.module.scss';
 
 const AlbumItem = ({ title, thumbnail }) => (
-  <li className={styles['album-item']}>
+  <li className={styles['album-item']} data-testid="album-item">
     <Link href={thumbnail} passHref>
       <span>
         <img
