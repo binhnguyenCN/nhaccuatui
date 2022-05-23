@@ -1,0 +1,1144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render new release should renders correctly 1`] = `
+<div
+  className="album-hot-wrapper"
+>
+  <div
+    className="album-hot-inner"
+  >
+    <h3
+      className="category-title"
+    >
+      <span
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <span>
+          mới phát hành
+        </span>
+        <span>
+          <span
+            aria-label="right"
+            className="anticon anticon-right"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+              />
+            </svg>
+          </span>
+        </span>
+      </span>
+    </h3>
+    <ul
+      className="category-list"
+    >
+      <li
+        className="album-hot-item"
+      >
+        <div
+          className="album-thumbnail"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650465304480_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650465304480_300.jpg"
+              title="Sunkissed"
+              width={152}
+            />
+          </span>
+          <div
+            className="thumbnail-dark-layer"
+          />
+          <div
+            className="thumbnail-play-icon"
+          >
+            <span
+              aria-label="play-circle"
+              className="anticon anticon-play-circle"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="play-circle"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                />
+                <path
+                  d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="thumbnail-durations"
+          >
+            <span
+              aria-label="customer-service"
+              className="anticon anticon-customer-service"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="customer-service"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+                />
+              </svg>
+            </span>
+            <span>
+              03:22
+            </span>
+          </div>
+        </div>
+        <div
+          className="album-info"
+        >
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650465304480_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Sunkissed
+          </span>
+          <span
+            className="artist-list"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2022/04/21/d/5/0/5/1650534373203_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Chillies
+            </a>
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/04/16/c/4/4/7/1587007390634_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              , Châu Bùi
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        className="album-hot-item"
+      >
+        <div
+          className="album-thumbnail"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1649986538375_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1649986538375_300.jpg"
+              title="Sao Tiếc Người Không Tốt"
+              width={152}
+            />
+          </span>
+          <div
+            className="thumbnail-dark-layer"
+          />
+          <div
+            className="thumbnail-play-icon"
+          >
+            <span
+              aria-label="play-circle"
+              className="anticon anticon-play-circle"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="play-circle"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                />
+                <path
+                  d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="thumbnail-durations"
+          >
+            <span
+              aria-label="customer-service"
+              className="anticon anticon-customer-service"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="customer-service"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+                />
+              </svg>
+            </span>
+            <span>
+              05:29
+            </span>
+          </div>
+        </div>
+        <div
+          className="album-info"
+        >
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1649986538375_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Sao Tiếc Người Không Tốt
+          </span>
+          <span
+            className="artist-list"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590568952971_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Hoài Lâm
+            </a>
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/09/28/1/e/7/5/1538105788032_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              , Vương Anh Tú
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        className="album-hot-item"
+      >
+        <div
+          className="album-thumbnail"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/08/8/a/1/f/1649419386962_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/song/2022/04/08/8/a/1/f/1649419386962_300.jpg"
+              title="Hẹn Nhau Trong Giấc Mơ"
+              width={152}
+            />
+          </span>
+          <div
+            className="thumbnail-dark-layer"
+          />
+          <div
+            className="thumbnail-play-icon"
+          >
+            <span
+              aria-label="play-circle"
+              className="anticon anticon-play-circle"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="play-circle"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                />
+                <path
+                  d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="thumbnail-durations"
+          >
+            <span
+              aria-label="customer-service"
+              className="anticon anticon-customer-service"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="customer-service"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+                />
+              </svg>
+            </span>
+            <span>
+              04:56
+            </span>
+          </div>
+        </div>
+        <div
+          className="album-info"
+        >
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/08/8/a/1/f/1649419386962_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Hẹn Nhau Trong Giấc Mơ
+          </span>
+          <span
+            className="artist-list"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/11/5/d/0/e/1568168042239_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Quốc Thiên
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        className="album-hot-item"
+      >
+        <div
+          className="album-thumbnail"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650442324895_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650442324895_300.jpg"
+              title="Still Loving You"
+              width={152}
+            />
+          </span>
+          <div
+            className="thumbnail-dark-layer"
+          />
+          <div
+            className="thumbnail-play-icon"
+          >
+            <span
+              aria-label="play-circle"
+              className="anticon anticon-play-circle"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="play-circle"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                />
+                <path
+                  d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="thumbnail-durations"
+          >
+            <span
+              aria-label="customer-service"
+              className="anticon anticon-customer-service"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="customer-service"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+                />
+              </svg>
+            </span>
+            <span>
+              04:34
+            </span>
+          </div>
+        </div>
+        <div
+          className="album-info"
+        >
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650442324895_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Still Loving You
+          </span>
+          <span
+            className="artist-list"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/24/a/e/d/0/1600928367614_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Bảo Uyên
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        className="album-hot-item"
+      >
+        <div
+          className="album-thumbnail"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/12/3/e/6/4/1649744331632_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/song/2022/04/12/3/e/6/4/1649744331632_300.jpg"
+              title="Bước Đi Vào Bar"
+              width={152}
+            />
+          </span>
+          <div
+            className="thumbnail-dark-layer"
+          />
+          <div
+            className="thumbnail-play-icon"
+          >
+            <span
+              aria-label="play-circle"
+              className="anticon anticon-play-circle"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="play-circle"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                />
+                <path
+                  d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="thumbnail-durations"
+          >
+            <span
+              aria-label="customer-service"
+              className="anticon anticon-customer-service"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="customer-service"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+                />
+              </svg>
+            </span>
+            <span>
+              03:56
+            </span>
+          </div>
+        </div>
+        <div
+          className="album-info"
+        >
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/12/3/e/6/4/1649744331632_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Bước Đi Vào Bar
+          </span>
+          <span
+            className="artist-list"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/09/d/1/4/9/1604888110945_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              MC Goku
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        className="album-hot-item"
+      >
+        <div
+          className="album-thumbnail"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/19/e/7/3/c/1650360805680_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/song/2022/04/19/e/7/3/c/1650360805680_300.jpg"
+              title="Từng Thương"
+              width={152}
+            />
+          </span>
+          <div
+            className="thumbnail-dark-layer"
+          />
+          <div
+            className="thumbnail-play-icon"
+          >
+            <span
+              aria-label="play-circle"
+              className="anticon anticon-play-circle"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="play-circle"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                />
+                <path
+                  d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="thumbnail-durations"
+          >
+            <span
+              aria-label="customer-service"
+              className="anticon anticon-customer-service"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="customer-service"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+                />
+              </svg>
+            </span>
+            <span>
+              04:10
+            </span>
+          </div>
+        </div>
+        <div
+          className="album-info"
+        >
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/19/e/7/3/c/1650360805680_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Từng Thương
+          </span>
+          <span
+            className="artist-list"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/08/13/7/d/5/0/1565688488776_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Phan Duy Anh
+            </a>
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/08/17/0/6/7/1/1597629837858_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              , ACV
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        className="album-hot-item"
+      >
+        <div
+          className="album-thumbnail"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/03/30/d/1/c/d/1648615934361_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/song/2022/03/30/d/1/c/d/1648615934361_300.jpg"
+              title="Hàng Xóm"
+              width={152}
+            />
+          </span>
+          <div
+            className="thumbnail-dark-layer"
+          />
+          <div
+            className="thumbnail-play-icon"
+          >
+            <span
+              aria-label="play-circle"
+              className="anticon anticon-play-circle"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="play-circle"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                />
+                <path
+                  d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="thumbnail-durations"
+          >
+            <span
+              aria-label="customer-service"
+              className="anticon anticon-customer-service"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="customer-service"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+                />
+              </svg>
+            </span>
+            <span>
+              04:04
+            </span>
+          </div>
+        </div>
+        <div
+          className="album-info"
+        >
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/03/30/d/1/c/d/1648615934361_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Hàng Xóm
+          </span>
+          <span
+            className="artist-list"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/07/28/a/7/b/7/1595920904052_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Anh Tú
+            </a>
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/06/7/2/4/6/1604652414322_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              , Lyly
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        className="album-hot-item"
+      >
+        <div
+          className="album-thumbnail"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/song/2021/06/28/8/4/3/c/1624874356860_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/song/2021/06/28/8/4/3/c/1624874356860_300.jpg"
+              title="Tình Ca Tình Ta"
+              width={152}
+            />
+          </span>
+          <div
+            className="thumbnail-dark-layer"
+          />
+          <div
+            className="thumbnail-play-icon"
+          >
+            <span
+              aria-label="play-circle"
+              className="anticon anticon-play-circle"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="play-circle"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                />
+                <path
+                  d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="thumbnail-durations"
+          >
+            <span
+              aria-label="customer-service"
+              className="anticon anticon-customer-service"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="customer-service"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+                />
+              </svg>
+            </span>
+            <span>
+              02:55
+            </span>
+          </div>
+        </div>
+        <div
+          className="album-info"
+        >
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/song/2021/06/28/8/4/3/c/1624874356860_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Tình Ca Tình Ta
+          </span>
+          <span
+            className="artist-list"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/06/28/b/2/0/9/1624873733141_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              kis
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        className="album-hot-item"
+      >
+        <div
+          className="album-thumbnail"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/01/b/b/2/e/1648800180068_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/song/2022/04/01/b/b/2/e/1648800180068_300.jpg"
+              title="DREAMYBAE"
+              width={152}
+            />
+          </span>
+          <div
+            className="thumbnail-dark-layer"
+          />
+          <div
+            className="thumbnail-play-icon"
+          >
+            <span
+              aria-label="play-circle"
+              className="anticon anticon-play-circle"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="play-circle"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                />
+                <path
+                  d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="thumbnail-durations"
+          >
+            <span
+              aria-label="customer-service"
+              className="anticon anticon-customer-service"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="customer-service"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+                />
+              </svg>
+            </span>
+            <span>
+              03:03
+            </span>
+          </div>
+        </div>
+        <div
+          className="album-info"
+        >
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/01/b/b/2/e/1648800180068_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            DREAMYBAE
+          </span>
+          <span
+            className="artist-list"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/03/09/0/3/c/0/1615277578224_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Arrow
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        className="album-hot-item"
+      >
+        <div
+          className="album-thumbnail"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/12/3/e/6/4/1649748534347_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/song/2022/04/12/3/e/6/4/1649748534347_300.jpg"
+              title="Bởi Vì Anh Là Nắng"
+              width={152}
+            />
+          </span>
+          <div
+            className="thumbnail-dark-layer"
+          />
+          <div
+            className="thumbnail-play-icon"
+          >
+            <span
+              aria-label="play-circle"
+              className="anticon anticon-play-circle"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="play-circle"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                />
+                <path
+                  d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="thumbnail-durations"
+          >
+            <span
+              aria-label="customer-service"
+              className="anticon anticon-customer-service"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="customer-service"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+                />
+              </svg>
+            </span>
+            <span>
+              03:53
+            </span>
+          </div>
+        </div>
+        <div
+          className="album-info"
+        >
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/song/2022/04/12/3/e/6/4/1649748534347_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Bởi Vì Anh Là Nắng
+          </span>
+          <span
+            className="artist-list"
+          >
+            <a
+              href="/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Mỹ Duyên
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              , lenguyenhuukhanh
+            </a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="pagination-wrapper"
+  >
+    <div
+      className="pagination-inner"
+    >
+      <button
+        className="pagination-left"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          aria-label="left"
+          className="anticon anticon-left"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="left"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+            />
+          </svg>
+        </span>
+      </button>
+      <div
+        className="pagination-index"
+      >
+        1
+        <span>
+           / 
+        </span>
+        3
+      </div>
+      <button
+        className="pagination-right"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          aria-label="right"
+          className="anticon anticon-right"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
