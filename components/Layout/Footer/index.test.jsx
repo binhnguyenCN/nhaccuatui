@@ -1,33 +1,38 @@
 // libs
 import { render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 // layouts
-import Footer from './index';
+import Footer from '.';
 // others
-import FooterData from '@/data_source/Footer';
+import FooterData from '@/mocks/dataSource/Footer';
 
 describe('render a footer', () => {
   it('should include email', () => {
-    render(<Footer />);
     // arrange
     const indexEmail = FooterData.contact.findIndex(
       (item) => item.title === 'email',
     );
     const emailValue = FooterData.contact[indexEmail].content;
     // act
-    const emailEle = screen.getByText(emailValue);
+    render(<Footer />);
     // assert
-    expect(emailEle).toBeInTheDocument();
+    expect(screen.getByText(emailValue)).toBeInTheDocument();
   });
   it('should include phone', () => {
-    render(<Footer />);
     // arrange
     const indexPhone = FooterData.contact.findIndex(
       (item) => item.title === 'phone',
     );
     const phoneValue = FooterData.contact[indexPhone].content;
     // act
-    const phoneEle = screen.getByText(phoneValue);
+    render(<Footer />);
     // assert
-    expect(phoneEle).toBeInTheDocument();
+    expect(screen.getByText(phoneValue)).toBeInTheDocument();
+  });
+  it('should renders correctly', () => {
+    // act
+    const tree = renderer.create(<Footer />).toJSON();
+    // assert
+    expect(tree).toMatchSnapshot();
   });
 });

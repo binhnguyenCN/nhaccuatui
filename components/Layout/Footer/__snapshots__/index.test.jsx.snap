@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render a footer should renders correctly 1`] = `
+<footer
+  className="footer-wrapper"
+>
+  <div
+    className="footer-inner"
+  >
+    <ul
+      className="footer-contact"
+    >
+      <li
+        className="contact-detail"
+      >
+        <span
+          href="https://goo.gl/maps/QLUWVMBJvYZuY7nx7"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            aria-label="profile"
+            className="anticon anticon-profile"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="profile"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM380 696c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm0-144c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm0-144c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm304 272c0 4.4-3.6 8-8 8H492c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h184c4.4 0 8 3.6 8 8v48zm0-144c0 4.4-3.6 8-8 8H492c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h184c4.4 0 8 3.6 8 8v48zm0-144c0 4.4-3.6 8-8 8H492c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h184c4.4 0 8 3.6 8 8v48z"
+              />
+            </svg>
+          </span>
+          Tầng 19, Tòa nhà The 678 Tower, Số 67 đường Hoàng Văn Thái, phường Tân Phú, quận 7, TP HCM.
+        </span>
+      </li>
+      <li
+        className="contact-detail"
+      >
+        <span
+          href="mailto:support@nct.vn"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            aria-label="mail"
+            className="anticon anticon-mail"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="mail"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-80.8 108.9L531.7 514.4c-7.8 6.1-18.7 6.1-26.5 0L189.6 268.9A7.2 7.2 0 01194 256h648.8a7.2 7.2 0 014.4 12.9z"
+              />
+            </svg>
+          </span>
+          support@nct.vn
+        </span>
+      </li>
+      <li
+        className="contact-detail"
+      >
+        <span
+          href="tel:02838687979"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            aria-label="phone"
+            className="anticon anticon-phone"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="phone"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M885.6 230.2L779.1 123.8a80.83 80.83 0 00-57.3-23.8c-21.7 0-42.1 8.5-57.4 23.8L549.8 238.4a80.83 80.83 0 00-23.8 57.3c0 21.7 8.5 42.1 23.8 57.4l83.8 83.8A393.82 393.82 0 01553.1 553 395.34 395.34 0 01437 633.8L353.2 550a80.83 80.83 0 00-57.3-23.8c-21.7 0-42.1 8.5-57.4 23.8L123.8 664.5a80.89 80.89 0 00-23.8 57.4c0 21.7 8.5 42.1 23.8 57.4l106.3 106.3c24.4 24.5 58.1 38.4 92.7 38.4 7.3 0 14.3-.6 21.2-1.8 134.8-22.2 268.5-93.9 376.4-201.7C828.2 612.8 899.8 479.2 922.3 344c6.8-41.3-6.9-83.8-36.7-113.8z"
+              />
+            </svg>
+          </span>
+          (028) 3868 7979
+        </span>
+      </li>
+    </ul>
+    <div
+      className="footer-copyright"
+    >
+      © NCT Corp. All rights reserved
+    </div>
+  </div>
+</footer>
+`;
