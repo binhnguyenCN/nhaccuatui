@@ -1,5 +1,6 @@
 // libs
 import { render, screen, fireEvent } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 // layouts
 import Header from '.';
 // others
@@ -9,53 +10,67 @@ import en from '@/locales/en';
 
 describe('renders a header', () => {
   it('should include logo', () => {
-    render(
-      <TestProvider>
-        <Header />
-      </TestProvider>,
-    );
     // arrange
     const logoAlt = 'nhaccuatui icon';
     // act
-    const logo = screen.getByAltText(logoAlt);
+    render(
+      <TestProvider>
+        <Header />
+      </TestProvider>,
+    );
     // assert
-    expect(logo).toBeInTheDocument();
+    expect(screen.getByAltText(logoAlt)).toBeInTheDocument();
+  });
+  it('should renders correctly', () => {
+    // act
+    const tree = renderer
+      .create(
+        <TestProvider>
+          <Header />
+        </TestProvider>,
+      )
+      .toJSON();
+    // assert
+    expect(tree).toMatchSnapshot();
   });
 });
 
-describe('check multi linguistic', () => {
-  it('should vietnamese songs', () => {
-    render(
-      <TestProvider>
-        <Header />
-      </TestProvider>,
-    );
+describe('check multi language', () => {
+  it('should change to vietnamese when select vi', () => {
     // arrange
-    const placeholder = 'Choose language';
+    const testId = 'select';
     const songVietnamese = vi.header.menuList[0].title;
     const shortCutVietnamese = 'vi';
     // act
-    const selectLang = screen.getByPlaceholderText(placeholder);
-    fireEvent.change(selectLang, { target: { value: shortCutVietnamese } });
-    const songsEle = screen.getByText(songVietnamese);
-    // assert
-    expect(songsEle).toBeInTheDocument();
-  });
-  it('should english songs', () => {
     render(
       <TestProvider>
         <Header />
       </TestProvider>,
     );
+    // assert
+    expect(screen.getByText(songVietnamese)).toBeInTheDocument();
+    fireEvent.change(screen.getByTestId(testId), {
+      target: { value: shortCutVietnamese },
+    });
+    expect(screen.getByText(songVietnamese)).toBeInTheDocument();
+  });
+  it('should change to english when select en', () => {
     // arrange
     const testId = 'select';
     const songEnglish = en.header.menuList[0].title;
+    const songVietnamese = vi.header.menuList[0].title;
     const shortCutEnglish = 'en';
     // act
-    const selectLang = screen.getByTestId(testId);
-    fireEvent.change(selectLang, { target: { value: shortCutEnglish } });
-    const songsEle = screen.getByText(songEnglish);
+    render(
+      <TestProvider>
+        <Header />
+      </TestProvider>,
+    );
     // assert
-    expect(songsEle).toBeInTheDocument();
+    expect(screen.getByText(songVietnamese)).toBeInTheDocument();
+    fireEvent.change(screen.getByTestId(testId), {
+      target: { value: shortCutEnglish },
+    });
+    expect(screen.getByText(songEnglish)).toBeInTheDocument();
   });
 });
