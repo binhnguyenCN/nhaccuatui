@@ -1,0 +1,917 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render song list should renders correctly 1`] = `
+<div
+  className="songs-wrapper"
+>
+  <div
+    className="song-inner"
+  >
+    <h3
+      className="category-title"
+    >
+      <span
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <span>
+          bài hát
+        </span>
+        <span>
+          <span
+            aria-label="right"
+            className="anticon anticon-right"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+              />
+            </svg>
+          </span>
+        </span>
+      </span>
+    </h3>
+    <ul
+      className="song-list"
+    >
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1650011742270_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Chơi Vơi"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1650011742270_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1650011742270_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Chơi Vơi - K-ICM, Trung Quân"
+              >
+                Chơi Vơi
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              K-ICM, Trung Quân
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            04:38
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650425153777_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Búng Cái Có Liền (Nghề Siêu Dễ OST)"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650425153777_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650425153777_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Búng Cái Có Liền (Nghề Siêu Dễ OST) - Ricky Star, OnlyC"
+              >
+                Búng Cái Có Liền (Ng
+                ...
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              Ricky Star, OnlyC
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            03:04
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1649983346857_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Như Là Tia Nắng"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1649983346857_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1649983346857_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Như Là Tia Nắng - DuongG, kpnn"
+              >
+                Như Là Tia Nắng
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              DuongG, kpnn
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            03:20
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/18/d/1/7/8/1650285254457_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Mật Ngọt Mất Hoa"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/18/d/1/7/8/1650285254457_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/18/d/1/7/8/1650285254457_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Mật Ngọt Mất Hoa - Mắt Ngọc"
+              >
+                Mật Ngọt Mất Hoa
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              Mắt Ngọc
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            03:29
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650598466445_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Riptide"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650598466445_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650598466445_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Riptide - The Chainsmokers"
+              >
+                Riptide
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              The Chainsmokers
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            02:51
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650612654259_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Plan B"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650612654259_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650612654259_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Plan B - Megan Thee Stallion"
+              >
+                Plan B
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              Megan Thee Stallion
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            02:43
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650599606285_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Someone Will Love You Better"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650599606285_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650599606285_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Someone Will Love You Better - Johnny Orlando"
+              >
+                Someone Will Love Yo
+                ...
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              Johnny Orlando
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            02:51
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650599725175_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Crazy Angels"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650599725175_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/22/d/d/b/e/1650599725175_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Crazy Angels - Carrie Underwood"
+              >
+                Crazy Angels
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              Carrie Underwood
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            02:36
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/03/29/b/9/5/1/1648535988965_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Give Me The Reason"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/03/29/b/9/5/1/1648535988965_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/03/29/b/9/5/1/1648535988965_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Give Me The Reason - James Bay"
+              >
+                Give Me The Reason
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              James Bay
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            03:54
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/05/a/4/7/f/1649125037969_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Still Life"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/05/a/4/7/f/1649125037969_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/05/a/4/7/f/1649125037969_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Still Life - BIGBANG"
+              >
+                Still Life
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              BIGBANG
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            03:08
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650425153777_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Búng Cái Có Liền (Nghề Siêu Dễ OST)"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650425153777_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/20/7/e/9/1/1650425153777_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Búng Cái Có Liền (Nghề Siêu Dễ OST) - Ricky Star, OnlyC"
+              >
+                Búng Cái Có Liền (Ng
+                ...
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              Ricky Star, OnlyC
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            03:04
+          </span>
+        </div>
+      </li>
+      <li
+        className="song-item"
+        data-testid="song-item"
+      >
+        <div
+          className="song-info"
+        >
+          <div
+            className="song-thumbnail"
+          >
+            <span
+              href="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1649983346857_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <img
+                alt="Như Là Tia Nắng"
+                height={60}
+                src="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1649983346857_300.jpg"
+                width={60}
+              />
+            </span>
+          </div>
+          <div
+            className="song-desc"
+          >
+            <div
+              className="song-title"
+            >
+              <span
+                href="https://avatar-ex-swe.nixcdn.com/song/2022/04/15/b/a/6/c/1649983346857_300.jpg"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="Như Là Tia Nắng - DuongG, kpnn"
+              >
+                Như Là Tia Nắng
+              </span>
+            </div>
+            <div
+              className="song-artists"
+            >
+              DuongG, kpnn
+            </div>
+          </div>
+        </div>
+        <div
+          className="song-views"
+        >
+          <span
+            aria-label="customer-service"
+            className="anticon anticon-customer-service"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="customer-service"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384zM328 632v192H200V632h128zm496 192H696V632h128v192z"
+              />
+            </svg>
+          </span>
+          <span>
+            03:20
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
