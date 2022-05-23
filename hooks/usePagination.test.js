@@ -12,6 +12,7 @@ describe('change page', () => {
     const { result } = renderHook(() => usePagination(page, limit, total));
     const { pagination, handleChangePage } = result.current;
     // act
+    expect(result.current.pagination.page).toBe(page);
     act(() => {
       handleChangePage(pagination.page + 1);
     });
@@ -26,6 +27,7 @@ describe('change page', () => {
     const { result } = renderHook(() => usePagination(page, limit, total));
     const { pagination, handleChangePage } = result.current;
     // act
+    expect(result.current.pagination.page).toBe(page);
     act(() => {
       handleChangePage(pagination.page - 1);
     });
@@ -40,6 +42,7 @@ describe('change page', () => {
     const { result } = renderHook(() => usePagination(page, limit, total));
     const { pagination, handleChangePage } = result.current;
     // act
+    expect(result.current.pagination.page).toBe(page);
     act(() => {
       handleChangePage(pagination.page - 1);
     });
@@ -54,6 +57,7 @@ describe('change page', () => {
     const { result } = renderHook(() => usePagination(page, limit, total));
     const { pagination, handleChangePage } = result.current;
     // act
+    expect(result.current.pagination.page).toBe(page);
     act(() => {
       handleChangePage(pagination.page + 1);
     });
@@ -68,6 +72,7 @@ describe('change page', () => {
     const { result } = renderHook(() => usePagination(page, limit, total));
     const { handleChangePage } = result.current;
     // act
+    expect(result.current.pagination.page).toBe(page);
     act(() => {
       handleChangePage(Math.ceil(total / limit) + 10);
     });
@@ -82,6 +87,7 @@ describe('change page', () => {
     const { result } = renderHook(() => usePagination(page, limit, total));
     const { handleChangePage } = result.current;
     // act
+    expect(result.current.pagination.page).toBe(page);
     act(() => {
       handleChangePage(-10);
     });
@@ -96,6 +102,7 @@ describe('change page', () => {
     const { result } = renderHook(() => usePagination(page, limit, total));
     const { handleChangePage } = result.current;
     // act
+    expect(result.current.pagination.page).toBe(page);
     act(() => {
       handleChangePage('jest');
     });

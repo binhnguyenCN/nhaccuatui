@@ -7,7 +7,7 @@ import locales from '../locales';
 
 const LocaleContext = createContext();
 
-export const ProvideLocale = ({ children }) => {
+export const ProvideLocale = ({ children, value }) => {
   const [locale, setLocale] = useLocalStorage('locale', 'vi');
 
   const providerLang = useMemo(
@@ -19,7 +19,7 @@ export const ProvideLocale = ({ children }) => {
     [locale, setLocale],
   );
   return (
-    <LocaleContext.Provider value={providerLang}>
+    <LocaleContext.Provider value={value || providerLang}>
       {children}
     </LocaleContext.Provider>
   );
