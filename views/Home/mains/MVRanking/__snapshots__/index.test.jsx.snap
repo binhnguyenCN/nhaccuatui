@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render MV ranking should renders correctly 1`] = `
+<div
+  className="mv-ranking-wrapper"
+>
+  <div
+    className="mv-ranking-inner"
+  >
+    <h3
+      className="category-title"
+    >
+      <span
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <span>
+          bxh mv
+        </span>
+        <span>
+          <span
+            aria-label="play-circle"
+            className="anticon anticon-play-circle"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="play-circle"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+              />
+              <path
+                d="M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+              />
+            </svg>
+          </span>
+        </span>
+      </span>
+    </h3>
+    <ul
+      className="ranking-option"
+    >
+      <li
+        className="ranking-item ranking-item-active"
+      >
+        <button
+          className="ranking-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          Việt Nam
+        </button>
+      </li>
+      <li
+        className="ranking-item"
+      >
+        <button
+          className="ranking-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          Âu Mỹ
+        </button>
+      </li>
+      <li
+        className="ranking-item"
+      >
+        <button
+          className="ranking-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          Hàn Quốc
+        </button>
+      </li>
+    </ul>
+    <ul
+      className="ranking-list"
+    >
+      <li
+        className="mv-ranking-item"
+      >
+        <div
+          className="mv-ranking-thumbnail"
+        >
+          <img
+            alt="mv ranking"
+            height={168}
+            src="https://avatar-ex-swe.nixcdn.com/mv/2022/04/22/d/8/1/d/1650617244595_640.jpg"
+            title="Anh Lo Cho Em Hết"
+            width={300}
+          />
+          <div
+            className="ranking-order"
+          >
+            1
+          </div>
+          <div
+            className="thumbnail-dark-layer"
+          />
+        </div>
+        <div
+          className="mv-ranking-info"
+        >
+          <div
+            className="mv-ranking-title"
+          >
+            Anh Lo Cho Em Hết
+          </div>
+          <div
+            className="mv-ranking-artists"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2022/04/19/b/5/c/c/1650363937009_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Đàm Vĩnh Hưng
+            </a>
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/03/02/2/8/6/4/1614651512512_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              , Ricky Star
+            </a>
+          </div>
+        </div>
+      </li>
+      <li
+        className="mv-ranking-item"
+      >
+        <div
+          className="mv-ranking-thumbnail"
+        >
+          <img
+            alt="mv ranking"
+            height={62}
+            src="https://avatar-ex-swe.nixcdn.com/mv/2022/04/20/f/d/f/c/1650435244252_640.jpg"
+            title="Quan Tâm Em Mỗi Ngày"
+            width={110}
+          />
+          <div
+            className="ranking-order"
+          >
+            2
+          </div>
+          <div
+            className="thumbnail-dark-layer"
+          />
+        </div>
+        <div
+          className="mv-ranking-info"
+        >
+          <div
+            className="mv-ranking-title"
+          >
+            Quan Tâm Em Mỗi Ngày
+          </div>
+          <div
+            className="mv-ranking-artists"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/07/22/f/e/a/2/1563760304939_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Hoàng Tôn
+            </a>
+          </div>
+        </div>
+      </li>
+      <li
+        className="mv-ranking-item"
+      >
+        <div
+          className="mv-ranking-thumbnail"
+        >
+          <img
+            alt="mv ranking"
+            height={62}
+            src="https://avatar-ex-swe.nixcdn.com/mv/2022/04/14/5/9/1/f/1649925760384_640.jpg"
+            title="Tình Chết Trong Hững Hờ"
+            width={110}
+          />
+          <div
+            className="ranking-order"
+          >
+            3
+          </div>
+          <div
+            className="thumbnail-dark-layer"
+          />
+        </div>
+        <div
+          className="mv-ranking-info"
+        >
+          <div
+            className="mv-ranking-title"
+          >
+            Tình Chết Trong Hững Hờ
+          </div>
+          <div
+            className="mv-ranking-artists"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/17/7/2/a/2/1568707006619_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Lệ Quyên
+            </a>
+          </div>
+        </div>
+      </li>
+      <li
+        className="mv-ranking-item"
+      >
+        <div
+          className="mv-ranking-thumbnail"
+        >
+          <img
+            alt="mv ranking"
+            height={62}
+            src="https://avatar-ex-swe.nixcdn.com/mv/2022/04/19/3/c/c/7/1650344734007_640.jpg"
+            title="Kết Thúc Như Bao Người"
+            width={110}
+          />
+          <div
+            className="ranking-order"
+          >
+            4
+          </div>
+          <div
+            className="thumbnail-dark-layer"
+          />
+        </div>
+        <div
+          className="mv-ranking-info"
+        >
+          <div
+            className="mv-ranking-title"
+          >
+            Kết Thúc Như Bao Người
+          </div>
+          <div
+            className="mv-ranking-artists"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/11/20/d/f/9/a/1574242685613_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Tăng Phúc
+            </a>
+          </div>
+        </div>
+      </li>
+      <li
+        className="mv-ranking-item"
+      >
+        <div
+          className="mv-ranking-thumbnail"
+        >
+          <img
+            alt="mv ranking"
+            height={62}
+            src="https://avatar-ex-swe.nixcdn.com/mv/2022/03/24/4/b/3/6/1648109917566_640.jpg"
+            title="Chống Lại Thế Giới"
+            width={110}
+          />
+          <div
+            className="ranking-order"
+          >
+            5
+          </div>
+          <div
+            className="thumbnail-dark-layer"
+          />
+        </div>
+        <div
+          className="mv-ranking-info"
+        >
+          <div
+            className="mv-ranking-title"
+          >
+            Chống Lại Thế Giới
+          </div>
+          <div
+            className="mv-ranking-artists"
+          >
+            <a
+              href="https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/12/15/e/f/5/9/1608025280378_300.jpg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Ngô Kiến Huy
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

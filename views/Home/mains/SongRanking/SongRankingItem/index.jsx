@@ -5,7 +5,7 @@ import React from 'react';
 import styles from './styles.module.scss';
 
 const SongRankingItem = ({ thumbnail, title, artists, index }) => (
-  <li className={styles['song-ranking-item']}>
+  <li className={styles['song-ranking-item']} data-testid="song-ranking-item">
     <div className={styles['song-ranking-thumbnail']}>
       {index === 1 && (
         <img

@@ -14,7 +14,7 @@ const SongItem = ({ thumbnail, title, duration, artists }) => {
     return result.join(', ');
   };
   return (
-    <li className={styles['song-item']}>
+    <li className={styles['song-item']} data-testid="song-item">
       <div className={styles['song-info']}>
         <div className={styles['song-thumbnail']}>
           <Link href={thumbnail} passHref>

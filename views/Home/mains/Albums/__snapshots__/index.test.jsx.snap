@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render album list should renders correctly 1`] = `
+Array [
+  <div
+    className="albums-wrapper"
+  >
+    <div
+      className="albums-inner"
+    >
+      <h3
+        className="category-title"
+      >
+        <span
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span>
+            Điểm Sáng Nhạc Việt
+          </span>
+        </span>
+      </h3>
+      <ul
+        className="category-list"
+      >
+        <li
+          className="album-item"
+          data-testid="album-item"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/19/9/7/a/5/1650365717216_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/19/9/7/a/5/1650365717216_300.jpg"
+              title="V-POP Những Bản Hit Quốc Dân"
+              width={152}
+            />
+          </span>
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/19/9/7/a/5/1650365717216_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="V-POP Những Bản Hit Quốc Dân"
+          >
+            V-POP Những Bản Hit 
+          </span>
+        </li>
+        <li
+          className="album-item"
+          data-testid="album-item"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/19/9/7/a/5/1650365624994_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/19/9/7/a/5/1650365624994_300.jpg"
+              title="V-POP 2022: Hot Comeback"
+              width={152}
+            />
+          </span>
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/19/9/7/a/5/1650365624994_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="V-POP 2022: Hot Comeback"
+          >
+            V-POP 2022: Hot Come
+          </span>
+        </li>
+        <li
+          className="album-item"
+          data-testid="album-item"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/19/9/7/a/5/1650339230854_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/19/9/7/a/5/1650339230854_300.jpg"
+              title="V-POP Today's Top Hits"
+              width={152}
+            />
+          </span>
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/19/9/7/a/5/1650339230854_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="V-POP Today's Top Hits"
+          >
+            V-POP Today's Top Hi
+          </span>
+        </li>
+        <li
+          className="album-item"
+          data-testid="album-item"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/playlist/2022/01/26/a/0/5/0/1643183067353_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/playlist/2022/01/26/a/0/5/0/1643183067353_300.jpg"
+              title="Nhạc Rap Việt Hôm Nay Nghe Gì?"
+              width={152}
+            />
+          </span>
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/playlist/2022/01/26/a/0/5/0/1643183067353_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="Nhạc Rap Việt Hôm Nay Nghe Gì?"
+          >
+            Nhạc Rap Việt Hôm Na
+          </span>
+        </li>
+        <li
+          className="album-item"
+          data-testid="album-item"
+        >
+          <span
+            href="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/15/5/1/b/e/1650010670819_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <img
+              alt="topic"
+              height={152}
+              src="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/15/5/1/b/e/1650010670819_300.jpg"
+              title="Dễ Thương Quá Đi"
+              width={152}
+            />
+          </span>
+          <span
+            className="album-title"
+            href="https://avatar-ex-swe.nixcdn.com/playlist/2022/04/15/5/1/b/e/1650010670819_300.jpg"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="Dễ Thương Quá Đi"
+          >
+            Dễ Thương Quá Đi
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  ",",
+]
+`;
