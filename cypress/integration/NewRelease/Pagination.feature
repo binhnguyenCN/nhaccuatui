@@ -3,9 +3,9 @@ Feature: Pagination in New Release
 Background: Access Home page
 	Given I access homepage
 
-# Scenario: Move between pages by click
-# 	When I click to next button
-# 	Then I was moved to next page
+Scenario: Move between pages by click
+	When I click to next button
+	Then I was moved to next page
 
 Scenario: Move between pages by press key
 	When I scroll to New Release
