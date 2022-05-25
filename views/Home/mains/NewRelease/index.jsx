@@ -64,7 +64,7 @@ const NewRelease = ({ songs }) => {
   }, [isHover, pagination, setPagination]);
 
   return (
-    <div className={styles['album-hot-wrapper']}>
+    <article className={styles['album-hot-wrapper']} id="new-release">
       <div className={styles['album-hot-inner']} ref={hoverRef}>
         <CategoryTitle title={CategoryTitles.newRelease} />
         <CategoryList>
@@ -85,7 +85,7 @@ const NewRelease = ({ songs }) => {
         </CategoryList>
       </div>
       <Pagination pagination={pagination} onPageChange={setPagination} />
-    </div>
+    </article>
   );
 };
 

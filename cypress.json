@@ -1,5 +1,5 @@
 {
   "baseUrl": "http://localhost:3000",
-  "testFiles": "**/*.spec.{js,jsx}",
+  "testFiles": "**/*.feature",
   "componentFolder": "cypress/pages"
 }

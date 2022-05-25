@@ -12,16 +12,17 @@ const Pagination = ({ pagination, onPageChange }) => {
 
   return (
     <div className={styles['pagination-wrapper']}>
-      <div className={styles['pagination-inner']}>
+      <div className={styles['pagination-inner']} data-testid="pagination">
         <button
           type="button"
           disabled={page <= 1}
           className={styles['pagination-left']}
           onClick={() => handlePageChange(page - 1)}
+          data-testid="prev"
         >
           <LeftOutlined />
         </button>
-        <div className={styles['pagination-index']}>
+        <div className={styles['pagination-index']} data-testid="page">
           {page}
           <span> / </span>
           {Math.ceil(total / limit)}
@@ -31,6 +32,7 @@ const Pagination = ({ pagination, onPageChange }) => {
           className={styles['pagination-right']}
           disabled={page >= Math.ceil(total / limit)}
           onClick={() => handlePageChange(page + 1)}
+          data-testid="next"
         >
           <RightOutlined />
         </button>
