@@ -1,6 +1,6 @@
 /* eslint-disable testing-library/prefer-screen-queries */
 /* eslint-disable testing-library/await-async-query */
-
+// libs
 import { When, Then } from 'cypress-cucumber-preprocessor/steps';
 
 When('I access Home page', () => {

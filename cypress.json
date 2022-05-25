@@ -1,5 +1,7 @@
 {
   "baseUrl": "http://localhost:3000",
   "testFiles": "**/*.feature",
-  "componentFolder": "cypress/pages"
+  "componentFolder": "cypress/integration",
+  "viewportWidth": 1280,
+  "viewportHeight": 720
 }

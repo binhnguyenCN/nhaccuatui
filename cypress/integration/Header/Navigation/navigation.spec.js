@@ -1,3 +1,4 @@
+// libs
 import { When, Then } from 'cypress-cucumber-preprocessor/steps';
 
 When('I access homepage', () => {
