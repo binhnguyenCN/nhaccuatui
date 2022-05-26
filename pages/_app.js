@@ -1,5 +1,6 @@
 // libs
 import React from 'react';
+import { wrapper } from '@/store/store';
 // layouts
 import Layout from '../components/Layout';
 // styles
@@ -12,4 +13,4 @@ const MyApp = ({ Component, pageProps }) => (
   </Layout>
 );
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);

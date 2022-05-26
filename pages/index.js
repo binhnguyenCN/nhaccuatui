@@ -1,30 +1,68 @@
 // libs
 import Head from 'next/head';
 import React from 'react';
+import { connect } from 'react-redux';
 // layouts
 import Home from '../views/Home';
+// constants
+import { DATA_ACTION_TYPE } from '@/constants/actionType';
 // others
 import mockData from '../api/mockApi';
+import { wrapper } from '@/store/store';
+import fetchAlbumList from '../store/actions/albumList';
 
-export const getServerSideProps = async () => {
+export const getServerSideProps = wrapper.getServerSideProps((store) => () => {
   // fetch data fake
   const data = { ...mockData };
+  // eslint-disable-next-line no-console
+  console.log('2. Page.getServerSideProps uses the store to dispatch things');
+
+  store.dispatch({
+    type: DATA_ACTION_TYPE.FETCH_BANNER_LIST,
+    payload: data.bannerList,
+  });
+  store.dispatch(fetchAlbumList(data.albumList));
+  store.dispatch({
+    type: DATA_ACTION_TYPE.FETCH_ALBUM_LIST,
+    payload: data.albumList,
+  });
+  store.dispatch({
+    type: DATA_ACTION_TYPE.FETCH_HOT_TOPIC,
+    payload: data.hotTopic,
+  });
+  store.dispatch({
+    type: DATA_ACTION_TYPE.FETCH_SONG_LIST,
+    payload: data.songList,
+  });
+  store.dispatch({
+    type: DATA_ACTION_TYPE.FETCH_SONG_RANKING,
+    payload: data.songRanking,
+  });
+  store.dispatch({
+    type: DATA_ACTION_TYPE.FETCH_TOP_SONG,
+    payload: data.topSong,
+  });
+  store.dispatch({
+    type: DATA_ACTION_TYPE.FETCH_VIDEO_LIST,
+    payload: data.videoList,
+  });
   return {
     props: { ...data },
   };
-};
+});
 
 const HomePage = (props) => {
   const {
-    bannerList,
-    albumList,
+    banners,
+    albums,
     hotTopic,
     newSong,
-    songList,
+    songs,
     songRanking,
     topSong,
-    videoList,
+    videos,
   } = props;
+
   return (
     <>
       <Head>
@@ -36,16 +74,16 @@ const HomePage = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Home
-        bannerList={bannerList}
-        albumList={albumList}
-        newSong={newSong}
-        videoList={videoList}
-        songList={songList}
-        topSong={topSong}
-        songRanking={songRanking}
-        hotTopic={hotTopic}
+        bannerList={banners.bannerList}
+        albumList={albums.albumList}
+        newSong={newSong.newSongList}
+        videoList={videos.videoList}
+        songList={songs.songList}
+        topSong={topSong.topSongList}
+        songRanking={songRanking.songRankingList}
+        hotTopic={hotTopic.hotTopicList}
       />
     </>
   );
 };
-export default HomePage;
+export default connect((state) => state)(HomePage);
