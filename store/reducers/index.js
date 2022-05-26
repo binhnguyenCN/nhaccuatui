@@ -1,5 +1,6 @@
 // libs
 import { combineReducers } from 'redux';
+import { HYDRATE } from 'next-redux-wrapper';
 // reducers
 import albumsReducer from './albumsReducer';
 import bannersReducer from './bannersReducer';
@@ -10,7 +11,7 @@ import songRankingReducer from './songRankingReducer';
 import topSongReducer from './topSongReducer';
 import videosReducer from './videosReducer';
 
-const rootReducer = combineReducers({
+const combinedReducer = combineReducers({
   banners: bannersReducer,
   albums: albumsReducer,
   hotTopic: hotTopicReducer,
@@ -20,4 +21,15 @@ const rootReducer = combineReducers({
   topSong: topSongReducer,
   videos: videosReducer,
 });
+const rootReducer = (state, action) => {
+  if (action.type === HYDRATE) {
+    const nextState = {
+      ...state,
+      ...action.payload,
+    };
+    if (state.banners) nextState.banners = state.banners;
+    return nextState;
+  }
+  return combinedReducer(state, action);
+};
 export default rootReducer;

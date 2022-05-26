@@ -11,7 +11,7 @@ const initialState = {
 const albumsReducer = (state = initialState, action) => {
   switch (action.type) {
     case HYDRATE: {
-      return { ...state };
+      return { ...state, ...action.payload };
     }
     case DATA_ACTION_TYPE.FETCH_ALBUM_LIST: {
       return {
