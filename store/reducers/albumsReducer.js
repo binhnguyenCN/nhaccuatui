@@ -10,8 +10,9 @@ const initialState = {
 // eslint-disable-next-line default-param-last
 const albumsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case HYDRATE:
+    case HYDRATE: {
       return { ...state };
+    }
     case DATA_ACTION_TYPE.FETCH_ALBUM_LIST: {
       return {
         ...state,

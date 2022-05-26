@@ -4,51 +4,32 @@ import React from 'react';
 import { connect } from 'react-redux';
 // layouts
 import Home from '../views/Home';
-// constants
-import { DATA_ACTION_TYPE } from '@/constants/actionType';
 // others
-import mockData from '../api/mockApi';
+import mockData from '@/api/mockApi';
 import { wrapper } from '@/store/store';
-import fetchAlbumList from '../store/actions/albumList';
+import {
+  albumListAction,
+  bannerListAction,
+  hotTopicAction,
+  newSongAction,
+  songListAction,
+  songRankingAction,
+  topSongAction,
+  videoListAction,
+} from '@/store/actions';
 
-export const getServerSideProps = wrapper.getServerSideProps((store) => () => {
-  // fetch data fake
+export const getStaticProps = wrapper.getStaticProps((store) => () => {
   const data = { ...mockData };
   // eslint-disable-next-line no-console
   console.log('2. Page.getServerSideProps uses the store to dispatch things');
-
-  store.dispatch({
-    type: DATA_ACTION_TYPE.FETCH_BANNER_LIST,
-    payload: data.bannerList,
-  });
-  store.dispatch(fetchAlbumList(data.albumList));
-  store.dispatch({
-    type: DATA_ACTION_TYPE.FETCH_ALBUM_LIST,
-    payload: data.albumList,
-  });
-  store.dispatch({
-    type: DATA_ACTION_TYPE.FETCH_HOT_TOPIC,
-    payload: data.hotTopic,
-  });
-  store.dispatch({
-    type: DATA_ACTION_TYPE.FETCH_SONG_LIST,
-    payload: data.songList,
-  });
-  store.dispatch({
-    type: DATA_ACTION_TYPE.FETCH_SONG_RANKING,
-    payload: data.songRanking,
-  });
-  store.dispatch({
-    type: DATA_ACTION_TYPE.FETCH_TOP_SONG,
-    payload: data.topSong,
-  });
-  store.dispatch({
-    type: DATA_ACTION_TYPE.FETCH_VIDEO_LIST,
-    payload: data.videoList,
-  });
-  return {
-    props: { ...data },
-  };
+  store.dispatch(albumListAction.fetchAlbumList(data.albumList));
+  store.dispatch(bannerListAction.fetchBannerList(data.bannerList));
+  store.dispatch(hotTopicAction.fetchHotTopic(data.hotTopic));
+  store.dispatch(topSongAction.fetchTopSong(data.topSong));
+  store.dispatch(newSongAction.fetchNewSong(data.newSong));
+  store.dispatch(songListAction.fetchSongList(data.songList));
+  store.dispatch(songRankingAction.fetchSongRanking(data.songRanking));
+  store.dispatch(videoListAction.fetchVideoList(data.videoList));
 });
 
 const HomePage = (props) => {
