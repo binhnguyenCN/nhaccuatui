@@ -16,7 +16,7 @@ const NewRelease = ({ songs }) => {
   const { pagination, handleChangePage: setPagination } = usePagination(
     1,
     10,
-    songs.song.length || 0,
+    songs.song?.length || 0,
   );
   const handleMouseEnter = () => {
     setIsHover(true);
@@ -64,28 +64,33 @@ const NewRelease = ({ songs }) => {
   }, [isHover, pagination, setPagination]);
 
   return (
-    <div className={styles['album-hot-wrapper']}>
-      <div className={styles['album-hot-inner']} ref={hoverRef}>
+    <article className={styles['album-hot-wrapper']}>
+      <div
+        className={styles['album-hot-inner']}
+        ref={hoverRef}
+        id="new-release"
+      >
         <CategoryTitle title={CategoryTitles.newRelease} />
         <CategoryList>
-          {songs.song
-            .slice(
-              pagination.page * pagination.limit - pagination.limit,
-              pagination.page * pagination.limit,
-            )
-            .map((song) => (
-              <NewReleaseItem
-                thumbnail={song.thumbnail}
-                title={song.title}
-                artists={song.artists}
-                duration={song.duration}
-                key={song.key}
-              />
-            ))}
+          {songs.song &&
+            songs.song
+              .slice(
+                pagination.page * pagination.limit - pagination.limit,
+                pagination.page * pagination.limit,
+              )
+              .map((song) => (
+                <NewReleaseItem
+                  thumbnail={song.thumbnail}
+                  title={song.title}
+                  artists={song.artists}
+                  duration={song.duration}
+                  key={song.key}
+                />
+              ))}
         </CategoryList>
       </div>
       <Pagination pagination={pagination} onPageChange={setPagination} />
-    </div>
+    </article>
   );
 };
 

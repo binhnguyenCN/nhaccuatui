@@ -65,6 +65,7 @@ module.exports = {
       'warn',
       { onlyFunctionsWithAsyncKeyword: true },
     ],
+    'jest/require-hook': 'off',
     'cypress/no-assigning-return-values': 'error',
     'cypress/no-unnecessary-waiting': 'error',
     'cypress/assertion-before-screenshot': 'warn',
